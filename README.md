@@ -1,19 +1,54 @@
 ## Ubuntu Command List
 
+### Básicos
+
+**` cd /home `** : Ir al directorio /home.  
+**` cd .. `** : Ir al directorio anterior.  
+**` pwd `** : Mostrar ruta.  
+
+**` sudo su `** : Acceder como root.  
+
+**` ls `** : Listar contenido.  
+**` ls -lh `** : Listar contenido + permisos (h tamaño del archivo).  
+**` ls -al `** : Listar contenido + permisos + ocultos.  
+**` ls -tl `**  
+**` ls *.json `**  
+
+**` mkdir dir1 `** : Crear directorio.  
+**` mkdir -p /var/www/html/nombredirectorio.com `** : Crear directorio (-p: crea los directorios padres en caso necesario).  
+
+**` rm -fr /var/www/posadawebsite/ `** : Eliminar directorio (forzado, recursivo).  
+**` rm file1 `** : Eliminar archivo.  
+**` rm -f file1 `** : Eliminar archivo forzado.  
+**` rm -rf dir1 `** : Eliminar directorio recursivo y forzado.  
+
+**` cp file1 destino/ `** : Copiar archivo.  
+**` cp -ra directorio/ ruta_de_destino/nombre_copia `** : Copiar directorio completo (Recursivo y con los permiso).  
+
+**` scp -r /home/mario/carpeta /home/usr `** : Copiar directorio completo.  
+**` scp archivo.txt /home/usr `** : Copiar archivo a directorio.  
+
+**` mv file1 /destino `** : Mover archivo.  
+**` mv directorio directorio_renombrado `** : Renombrar directorio.  
+
+**` ctrl + c  `** : Frenar ejecución.  
+**` clear `** : Limpiar pantalla.  
+**` history `** : Historial de comandos ejecutados.  
+
 ### Command find:
 
-**`sudo find /home/nombre_usuario/Escritorio -name “*.jpg”`** : Busca todos los archivos del Escritorio con extensión .jpg.  
-**`sudo find . -name “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre.  
-**`sudo find . ! -name “*hola*”`** : Busca todos los archivos que NO contienen la palabra “hola” en el nombre.  
-**`sudo find . -name “*hola*” -a “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” y “caracola” en el nombre.  
-**`sudo find . -name “*hola*” -o “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” o “caracola” en el nombre.  
-**`sudo find . -iname “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.  
-**`sudo find . -user nombre_usuario`** : Busca todos los archivos de un usuario determinado (nombre_usuario).  
-**`sudo find . -size +1000k`** : Busca todos los archivos de tamaño mayor a 1000 kb.  
-**`sudo find . -amin -30`** : Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
-**`sudo find . -atime 365`** : Busca todos los archivos a los que se accedió hace un año exactamente.  
-**`sudo find . -name “*.jpg” -exec rm {} \;`** : Busca todos los archivos con extensión .jpg y los borra.  
-**`sudo find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt`** : Para guardar el resultado de la búsqueda en un archivo de texto.  
+**` find /home/nombre_usuario/Escritorio -name “*.jpg”`** : Busca todos los archivos del Escritorio con extensión .jpg.  
+**` find . -name “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre.  
+**` find . ! -name “*hola*”`** : Busca todos los archivos que NO contienen la palabra “hola” en el nombre.  
+**` find . -name “*hola*” -a “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” y “caracola” en el nombre.  
+**` find . -name “*hola*” -o “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” o “caracola” en el nombre.  
+**` find . -iname “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.  
+**` find . -user nombre_usuario`** : Busca todos los archivos de un usuario determinado (nombre_usuario).  
+**` find . -size +1000k`** : Busca todos los archivos de tamaño mayor a 1000 kb.  
+**` find . -amin -30`** : Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
+**` find . -atime 365`** : Busca todos los archivos a los que se accedió hace un año exactamente.  
+**` find . -name “*.jpg” -exec rm {} \;`** : Busca todos los archivos con extensión .jpg y los borra.  
+**` find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt`** : Para guardar el resultado de la búsqueda en un archivo de texto.  
 
 **` find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 `** : Buscar los 15 archivos modificados.   
 
