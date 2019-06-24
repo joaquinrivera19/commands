@@ -1,6 +1,6 @@
 ## Ubuntu Command List
 
-### Básicos
+### Gestionar archivos y directorios
 
 **` cd /home `** : Ir al directorio /home.  
 **` cd .. `** : Ir al directorio anterior.  
@@ -35,7 +35,7 @@
 **` clear `** : Limpiar pantalla.  
 **` history `** : Historial de comandos ejecutados.  
 
-### Command find:
+### Encontrar archivos:
 
 **` find /home/nombre_usuario/Escritorio -name “*.jpg”`** : Busca todos los archivos del Escritorio con extensión .jpg.  
 **` find . -name “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre.  
@@ -84,5 +84,11 @@
 **` 2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; `** : Crear permisos para el usuario (el asterisco representa base de datos y la tabla).  
 **` 3. FLUSH PRIVILEGES; `** : Refrescar todos los privilegios.  
 **` 4. DROP USER 'nombre_usuario'@'localhost'’; `** : Eliminar un usuario.  
+
+### Espacio en disco:  
+
+### Permisos en ficheros:  
+
+### Ver el contenido de un fichero:  
 
 
