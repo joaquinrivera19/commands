@@ -98,6 +98,8 @@
 **` git clone username@host:/path/to/repository `** : Si utilizas un servidor remoto.  
 **` git add nombre_archivo `** : Registrar cambios de un archivo.  
 **` git add . `** : Registrar cambios de todos los archivos.  
+**` git add -A `** : Registrar cambios de todos los archivos.  
+**` git rm -r [file-name.txt] **` : Eliminar un archivo o directorio.  
 **` git commit -m "Commit message" `** : Hace commit a los archivos que indiquemo.  
 **` git push origin master `** : Para enviar los cambios a tu repositorio remoto (Reemplaza master por la rama a la que quieres enviar los cambios).  
 **` git push origin <branch> `** : Subir (push) la rama creada a tu repositorio remoto.  
