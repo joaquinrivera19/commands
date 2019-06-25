@@ -135,7 +135,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-| **` git push origin master `** | Para enviar los cambios a tu repositorio remoto (Reemplaza master por la rama a la que quieres enviar los cambios). |
 | **` git push origin <branch> `** | Subir (push) la rama creada a tu repositorio remoto. |
 | **` git pull `** | Actualizar tu repositorio local al commit más nuevo. |
 | **` git pull origin NombreDeBranch `** | Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando. |
