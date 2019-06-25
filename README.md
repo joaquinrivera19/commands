@@ -44,7 +44,7 @@ history : # Historial de comandos ejecutados.
 **` find . ! -name “*hola*”`** : Busca todos los archivos que NO contienen la palabra “hola” en el nombre.  
 **` find . -name “*hola*” -a “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” y “caracola” en el nombre.  
 **` find . -name “*hola*” -o “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” o “caracola” en el nombre.  
-**` find . -iname “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.  
+**` find . -iname “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.   
 **` find . -user nombre_usuario`** : Busca todos los archivos de un usuario determinado (nombre_usuario).  
 **` find . -size +1000k`** : Busca todos los archivos de tamaño mayor a 1000 kb.  
 **` find . -amin -30`** : Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
