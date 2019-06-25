@@ -2,9 +2,8 @@
 
 #### Gestionar archivos y directorios
 
-```sh
-` cd /home ` : Ir al directorio /home.  
-` cd .. ` : Ir al directorio anterior.  
+**` cd /home `** : Ir al directorio /home.  
+**` cd .. `** : Ir al directorio anterior.  
 **` pwd `** : Mostrar ruta.  
 
 **` sudo su `** : Acceder como root.  
@@ -35,7 +34,6 @@
 **` ctrl + c  `** : Frenar ejecución.  
 **` clear `** : Limpiar pantalla.  
 **` history `** : Historial de comandos ejecutados.  
-```
 
 ### Encontrar archivos:
 
