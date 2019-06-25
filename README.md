@@ -1,9 +1,10 @@
 ## Ubuntu Command List
 
-### Gestionar archivos y directorios
+#### Gestionar archivos y directorios
 
-**` cd /home `** : Ir al directorio /home.  
-**` cd .. `** : Ir al directorio anterior.  
+```sh
+` cd /home ` : Ir al directorio /home.  
+` cd .. ` : Ir al directorio anterior.  
 **` pwd `** : Mostrar ruta.  
 
 **` sudo su `** : Acceder como root.  
@@ -34,6 +35,7 @@
 **` ctrl + c  `** : Frenar ejecución.  
 **` clear `** : Limpiar pantalla.  
 **` history `** : Historial de comandos ejecutados.  
+```
 
 ### Encontrar archivos:
 
