@@ -107,7 +107,7 @@
 | ------- | ----------- |
 | **` git status `** | Estado del repositorio. |
 | **` git add nombre_archivo `** | Registrar cambios de un archivo. |
-| **` git add . `** | Registrar cambios de todos los archivos. |
+| **` git add . `** | Agregando todos los cambios de archivos en un directorio. |
 | **` git add -A `** | Registrar cambios de todos los archivos. |
 | **` git commit -m "Commit message" `** | Hace commit a los archivos que indiquemo. |
 | **` git rm -r [file-name.txt] `** | Eliminar un archivo o directorio. |
