@@ -91,36 +91,59 @@
 
 ### Ver el contenido de un fichero:  
 
-### GIT:  
+### GIT:
 
-**` git init `** : Crear un nuevo repositorio.  
-**` git clone /path/to/repository `** : Crea una copia local del repositorio.  
-**` git clone username@host:/path/to/repository `** : Si utilizas un servidor remoto.  
-**` git add nombre_archivo `** : Registrar cambios de un archivo.  
-**` git add . `** : Registrar cambios de todos los archivos.  
-**` git add -A `** : Registrar cambios de todos los archivos.  
-**` git rm -r [file-name.txt] **` : Eliminar un archivo o directorio.  
-**` git commit -m "Commit message" `** : Hace commit a los archivos que indiquemo.  
-**` git push origin master `** : Para enviar los cambios a tu repositorio remoto (Reemplaza master por la rama a la que quieres enviar los cambios).  
-**` git push origin <branch> `** : Subir (push) la rama creada a tu repositorio remoto.  
-**` git remote add origin <server> `** : Conectar tu repositorio local a un repositorio remoto.  
+### Getting & Creating Projects
 
-**` git branch `** : Muestra una lista de los branches que existen en nuestro repositorio.  
-**` git checkout -b feature_x `** : Crea una nueva rama llamada "feature_x" y cámbiate a ella.  
-**` git checkout master `** : Ir a la rama principal.  
-**` git checkout -- <filename> `** :  Reemplazar cambios locales con el último contenido del HEAD.  
-**` git branch -d feature_x `** : Borra la rama.  
-  
-**` git pull `** : Actualizar tu repositorio local al commit más nuevo.  
-**` git pull origin NombreDeBranch `** : Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando.  
-**` git merge <branch> `** : Para fusionar otra rama a tu rama activa.  
-  
-**` git log `** : Log.   
-**` git status `** : Estado del repositorio.  
-**` git show **` : Muestra los cambios realizados en el commit.  
+| Command | Description |
+| ------- | ----------- |
+| **` git init `** | Crear un nuevo repositorio. |
+| **` git clone /path/to/repository `** | Crea una copia local del repositorio. |
+| **` git clone username@host:/path/to/repository `** | Si utilizas un servidor remoto. |
 
-**` git config --global user.name "Sam Smith" **` : Configurar name.  
-**` git config --global user.email sam@example.com **` : Configurar email.  
+### Basic Snapshotting
+
+| Command | Description |
+| ------- | ----------- |
+| **` git status `** | Estado del repositorio. |
+| **` git add nombre_archivo `** | Registrar cambios de un archivo. |
+| **` git add . `** | Registrar cambios de todos los archivos. |
+| **` git add -A `** | Registrar cambios de todos los archivos. |
+| **` git commit -m "Commit message" `** | Hace commit a los archivos que indiquemo. |
+| **` git rm -r [file-name.txt] `** | Eliminar un archivo o directorio. |
+ 
+### Branching & Merging
+
+| Command | Description |
+| ------- | ----------- |
+| **` git branch `** | Muestra una lista de los branches que existen en nuestro repositorio. |
+| **` git checkout -b feature_x `** | Crea una nueva rama llamada "feature_x" y cámbiate a ella. |
+| **` git checkout master `** | Ir a la rama principal. |
+| **` git checkout -- <filename> `** |  Reemplazar cambios locales con el último contenido del HEAD. |
+| **` git branch -d feature_x `** | Borra la rama. |
+
+### Sharing & Updating Projects
+
+| Command | Description |
+| ------- | ----------- |
+| **` git push origin master `** | Para enviar los cambios a tu repositorio remoto (Reemplaza master por la rama a la que quieres enviar los cambios). |
+| **` git push origin <branch> `** | Subir (push) la rama creada a tu repositorio remoto. |
+| **` git pull `** | Actualizar tu repositorio local al commit más nuevo. |
+| **` git pull origin NombreDeBranch `** | Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando. |
+| **` git merge <branch> `** | Para fusionar otra rama a tu rama activa. |
+| **` git remote add origin <server> `** | Conectar tu repositorio local a un repositorio remoto. |
+
+### Inspection & Comparison
+
+| Command | Description |
+| ------- | ----------- |
+| **` git log `** | Ver cambios. |
+| **` git log --summary `** | Ver cambios detallados |
+| **` git show `** | Muestra los cambios realizados en el commit. |
+| **`git diff [source branch] [target branch]`** | Vista previa de cambios antes de fusionar |
+
+**` git config --global user.name "Sam Smith" `** : Configurar name.  
+**` git config --global user.email sam@example.com `** : Configurar email.  
 
 
 
