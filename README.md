@@ -91,4 +91,31 @@
 
 ### Ver el contenido de un fichero:  
 
+### GIT:  
+
+**` git init `** : Crear un nuevo repositorio.  
+**` git clone /path/to/repository `** : Crea una copia local del repositorio.  
+**` git clone username@host:/path/to/repository `** : Si utilizas un servidor remoto.  
+**` git add nombre_archivo `** : Registrar cambios de un archivo.  
+**` git add . `** : Registrar cambios de todos los archivos.  
+**` git commit -m "Commit message" `** : Hace commit a los archivos que indiquemo.  
+**` git push origin master `** : Para enviar los cambios a tu repositorio remoto (Reemplaza master por la rama a la que quieres enviar los cambios).  
+**` git push origin <branch> `** : Subir (push) la rama creada a tu repositorio remoto.  
+**` git remote add origin <server> `** : Conectar tu repositorio local a un repositorio remoto.  
+
+**` git branch `** : Muestra una lista de los branches que existen en nuestro repositorio.  
+**` git checkout -b feature_x `** : Crea una nueva rama llamada "feature_x" y cámbiate a ella.  
+**` git checkout master `** : Ir a la rama principal.  
+**` git checkout -- <filename> `** :  Reemplazar cambios locales con el último contenido del HEAD.  
+**` git branch -d feature_x `** : Borra la rama.  
+  
+**` git pull `** : Actualizar tu repositorio local al commit más nuevo.  
+**` git pull origin NombreDeBranch `** : Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando.  
+**` git merge <branch> `** : Para fusionar otra rama a tu rama activa.  
+  
+**` git log `** : Log.   
+**` git status `** : Estado del repositorio.  
+
+
+
 
