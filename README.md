@@ -2,6 +2,11 @@
 
 #### Gestionar archivos y directorios
 
+```sh
+git blame [filename] # Show alteration history of a file with the name of the author
+git blame [filename] -l # Show alteration history of a file with the name of the author && SHA
+```
+
 `** cd /home ** : # Ir al directorio /home.`  
 **` cd .. `** : # Ir al directorio anterior.  
 **` pwd `** : # Mostrar ruta.  
