@@ -118,6 +118,9 @@
 **` git log `** : Log.   
 **` git status `** : Estado del repositorio.  
 
+**` git config --global user.name "Sam Smith" **` :
+**` git config --global user.email sam@example.com **` :
+
 
 
 
