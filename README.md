@@ -3,42 +3,39 @@
 #### Gestionar archivos y directorios
 
 ```sh
-git blame [filename] # Show alteration history of a file with the name of the author
-git blame [filename] -l # Show alteration history of a file with the name of the author && SHA
+cd /home : # Ir al directorio /home.
+cd .. : # Ir al directorio anterior.
+pwd : # Mostrar ruta.
+
+sudo su : # Acceder como root.
+
+ls : # Listar contenido.
+ls -lh : # Listar contenido + permisos (h tamaño del archivo).
+ls -al : # Listar contenido + permisos + ocultos.
+ls -tl : #
+ls *.json : #
+
+mkdir dir1 : # Crear directorio.
+mkdir -p /var/www/html/nombredirectorio.com : # Crear directorio (-p: crea los directorios padres en caso necesario).
+
+rm -fr /var/www/posadawebsite/ : # Eliminar directorio (forzado, recursivo).
+rm file1 : # Eliminar archivo.
+rm -f file1 : # Eliminar archivo forzado.
+rm -rf dir1 : # Eliminar directorio recursivo y forzado.
+
+cp file1 destino/ : # Copiar archivo.
+cp -ra directorio/ ruta_de_destino/nombre_copia : # Copiar directorio completo (Recursivo y con los permiso).
+
+scp -r /home/mario/carpeta /home/usr : # Copiar directorio completo.
+scp archivo.txt /home/usr : # Copiar archivo a directorio.
+
+mv file1 /destino : # Mover archivo.
+mv directorio directorio_renombrado : # Renombrar directorio.
+
+ctrl + c  : # Frenar ejecución.
+clear : # Limpiar pantalla.
+history : # Historial de comandos ejecutados.
 ```
-
-`** cd /home ** : # Ir al directorio /home.`  
-**` cd .. `** : # Ir al directorio anterior.  
-**` pwd `** : # Mostrar ruta.  
-
-**` sudo su `** : Acceder como root.  
-
-**` ls `** : Listar contenido.  
-**` ls -lh `** : Listar contenido + permisos (h tamaño del archivo).  
-**` ls -al `** : Listar contenido + permisos + ocultos.  
-**` ls -tl `**  
-**` ls *.json `**  
-
-**` mkdir dir1 `** : Crear directorio.  
-**` mkdir -p /var/www/html/nombredirectorio.com `** : Crear directorio (-p: crea los directorios padres en caso necesario).  
-
-**` rm -fr /var/www/posadawebsite/ `** : Eliminar directorio (forzado, recursivo).  
-**` rm file1 `** : Eliminar archivo.  
-**` rm -f file1 `** : Eliminar archivo forzado.  
-**` rm -rf dir1 `** : Eliminar directorio recursivo y forzado.  
-
-**` cp file1 destino/ `** : Copiar archivo.  
-**` cp -ra directorio/ ruta_de_destino/nombre_copia `** : Copiar directorio completo (Recursivo y con los permiso).  
-
-**` scp -r /home/mario/carpeta /home/usr `** : Copiar directorio completo.  
-**` scp archivo.txt /home/usr `** : Copiar archivo a directorio.  
-
-**` mv file1 /destino `** : Mover archivo.  
-**` mv directorio directorio_renombrado `** : Renombrar directorio.  
-
-**` ctrl + c  `** : Frenar ejecución.  
-**` clear `** : Limpiar pantalla.  
-**` history `** : Historial de comandos ejecutados.  
 
 ### Encontrar archivos:
 
