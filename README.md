@@ -117,9 +117,10 @@
   
 **` git log `** : Log.   
 **` git status `** : Estado del repositorio.  
+**` git show **` : Muestra los cambios realizados en el commit.  
 
-**` git config --global user.name "Sam Smith" **` :
-**` git config --global user.email sam@example.com **` :
+**` git config --global user.name "Sam Smith" **` : Configurar name.  
+**` git config --global user.email sam@example.com **` : Configurar email.  
 
 
 
