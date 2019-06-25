@@ -116,11 +116,20 @@
 
 | Command | Description |
 | ------- | ----------- |
-| **` git branch `** | Muestra una lista de los branches que existen en nuestro repositorio. |
-| **` git checkout -b feature_x `** | Crea una nueva rama llamada "feature_x" y cámbiate a ella. |
-| **` git checkout master `** | Ir a la rama principal. |
-| **` git checkout -- <filename> `** |  Reemplazar cambios locales con el último contenido del HEAD. |
-| **` git branch -d feature_x `** | Borra la rama. |
+| **` git branch `** | Listar branches (local) |
+| **` git branch -a `** | Listar branches (local y remoto) |
+| **` git branch [branch name] `** | Crear un nuevo branch |
+| **` git branch -d [branch name] `** | Eliminar un branch |
+| **` git push origin --delete [branch name] `** | Elimina un branch remoto |
+| **` git checkout -b [branch name] `** | Crea un nuevo branch y me cambio a ella |
+| **` git checkout -b [branch name] origin/[branch name] `** | Clona un branch remota y me cambia a ella |
+| **` git checkout [branch name] `** | Cambiar a un branch |
+| **` git checkout - `** | Switch to the branch last checked out |
+| **` git checkout -- [file-name.txt] `** | Descartar cambios a un archivo |
+| **` git merge [branch name] `** | Fusionar una rama en la rama activa |
+| **` git merge [source branch] [target branch] `** | Fusionar una rama en una rama objetivo |
+| **` git stash `** | Stash changes in a dirty working directory |
+| **` git stash clear `** | Remove all stashed entries |
 
 ### Sharing & Updating Projects
 
