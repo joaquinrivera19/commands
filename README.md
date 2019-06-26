@@ -111,7 +111,7 @@ history : # Historial de comandos ejecutados.
 | **` git add nombre_archivo `** | Registrar cambios de un archivo. |
 | **` git add . `** | Agregando todos los cambios de archivos en un directorio. |
 | **` git add -A `** | Registrar cambios de todos los archivos. |
-| **` git commit -m "Commit message" `** | Hace commit a los archivos que indiquemo. |
+| **` git commit -m "Commit message" `** | Hace commit. |
 | **` git rm -r [file-name.txt] `** | Eliminar un archivo o directorio. |
  
 ### Branching & Merging
@@ -137,10 +137,11 @@ history : # Historial de comandos ejecutados.
 
 | Command | Description |
 | ------- | ----------- |
-| **` git push origin <branch> `** | Subir (push) la rama creada a tu repositorio remoto. |
+| **` git push origin <branch> `** | Subir (push) la rama a tu repositorio remoto. |
 | **` git pull `** | Actualizar tu repositorio local al commit más nuevo. |
 | **` git pull origin NombreDeBranch `** | Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando. |
 | **` git merge <branch> `** | Para fusionar otra rama a tu rama activa. |
+| **` git remote -v `** | Muestra los repositorios remotos que están configurados actualmente. |
 | **` git remote add origin <server> `** | Conectar tu repositorio local a un repositorio remoto. |
 
 ### Inspection & Comparison
@@ -152,8 +153,12 @@ history : # Historial de comandos ejecutados.
 | **` git show `** | Muestra los cambios realizados en el commit. |
 | **`git diff [source branch] [target branch]`** | Vista previa de cambios antes de fusionar |
 
-**` git config --global user.name "Sam Smith" `** : Configurar name.  
-**` git config --global user.email sam@example.com `** : Configurar email.  
+**` git config `** : Establecer la configuracion.
+**` git config --get remote.origin `** : Obtener la url de nuestro repositorio.
+**` git config --local -l `** : Conocer todos los datos de la configuración local de Git en nuestro proyecto.
+**` git config --global -l `** : Conocer todos los datos de la configuración global de Git en nuestro proyecto.
+**` git config --global user.name "Sam Smith" `** : Configurar name que será identificado al hacer el commits.  
+**` git config --global user.email sam@example.com `** : Configurar email que será identificado al hacer el commits.  
 
 
 
