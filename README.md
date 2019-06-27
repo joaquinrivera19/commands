@@ -120,50 +120,46 @@ git rm -r [file-name.txt] : # Eliminar un archivo o directorio.
  
 ##### Branching & Merging
 
-| Command | Description |
-| ------- | ----------- |
-| **` git branch `** | Listar branches (local) |
-| **` git branch -a `** | Listar branches (local y remoto) |
-| **` git branch [branch name] `** | Crear un nuevo branch |
-| **` git branch -d [branch name] `** | Eliminar un branch |
-| **` git push origin --delete [branch name] `** | Elimina un branch remoto |
-| **` git checkout -b [branch name] `** | Crea un nuevo branch y me cambio a ella |
-| **` git checkout -b [branch name] origin/[branch name] `** | Clona un branch remota y me cambia a ella |
-| **` git checkout [branch name] `** | Cambiar a un branch |
-| **` git checkout - `** | Switch to the branch last checked out |
-| **` git checkout -- [file-name.txt] `** | Descartar cambios a un archivo |
-| **` git merge [branch name] `** | Fusionar una rama en la rama activa |
-| **` git merge [source branch] [target branch] `** | Fusionar una rama en una rama objetivo |
-| **` git stash `** | Stash changes in a dirty working directory |
-| **` git stash clear `** | Remove all stashed entries |
-
+```sh
+git branch : # Listar branches (local).
+git branch -a : # Listar branches (local y remoto).
+git branch [branch name] : # Crear un nuevo branch.
+git branch -d [branch name] : # Eliminar un branch.
+git push origin --delete [branch name] : # Elimina un branch remoto.
+git checkout -b [branch name] : # Crea un nuevo branch y me cambio a ella.
+git checkout -b [branch name] origin/[branch name] : # Clona un branch remota y me cambia a ella.
+git checkout [branch name] : # Cambiar a un branch.
+git checkout - : # Switch to the branch last checked out.
+git checkout -- [file-name.txt] : # Descartar cambios a un archivo.
+git merge [branch name] : # Fusionar una rama en la rama activa.
+git merge [source branch] [target branch] : # Fusionar una rama en una rama objetivo.
+git stash : # Stash changes in a dirty working directory.
+git stash clear : # Remove all stashed entries.
+ ```
+ 
 ##### Sharing & Updating Projects
 
-| Command | Description |
-| ------- | ----------- |
-| **` git push origin <branch> `** | Subir (push) la rama a tu repositorio remoto. |
-| **` git pull `** | Actualizar tu repositorio local al commit más nuevo. |
-| **` git pull origin NombreDeBranch `** | Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando. |
-| **` git merge <branch> `** | Para fusionar otra rama a tu rama activa. |
-| **` git remote -v `** | Muestra los repositorios remotos que están configurados actualmente. |
-| **` git remote add origin <server> `** | Conectar tu repositorio local a un repositorio remoto. |
-
+```sh
+git push origin <branch> : # Subir (push) la rama a tu repositorio remoto.
+git pull : # Actualizar tu repositorio local al commit más nuevo.
+git pull origin NombreDeBranch : # Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando.
+git merge <branch> : # Para fusionar otra rama a tu rama activa.
+git remote -v : # Muestra los repositorios remotos que están configurados actualmente.
+git remote add origin <server> : # Conectar tu repositorio local a un repositorio remoto.
+ ```
+ 
 ##### Inspection & Comparison
 
-| Command | Description |
-| ------- | ----------- |
-| **` git log `** | Ver cambios. |
-| **` git log --summary `** | Ver cambios detallados |
-| **` git show `** | Muestra los cambios realizados en el commit. |
-| **`git diff [source branch] [target branch]`** | Vista previa de cambios antes de fusionar |
+```sh
+git log : # Ver cambios.
+git log --summary : # Ver cambios detallados.
+git show : # Muestra los cambios realizados en el commit.
+git diff [source branch] [target branch] : # Vista previa de cambios antes de fusionar.
 
-**` git config `** : Establecer la configuracion.
-**` git config --get remote.origin `** : Obtener la url de nuestro repositorio.
-**` git config --local -l `** : Conocer todos los datos de la configuración local de Git en nuestro proyecto.
-**` git config --global -l `** : Conocer todos los datos de la configuración global de Git en nuestro proyecto.
-**` git config --global user.name "Sam Smith" `** : Configurar name que será identificado al hacer el commits.  
-**` git config --global user.email sam@example.com `** : Configurar email que será identificado al hacer el commits.  
-
-
-
-
+git config : # Establecer la configuracion.
+git config --get remote.origin : # Obtener la url de nuestro repositorio.
+git config --local -l : # Conocer todos los datos de la configuración local de Git en nuestro proyecto.
+git config --global -l : # Conocer todos los datos de la configuración global de Git en nuestro proyecto.
+git config --global user.name "Sam Smith" : # Configurar name que será identificado al hacer el commits.
+git config --global user.email sam@example.com : # Configurar email que será identificado al hacer el commits.
+ ```
