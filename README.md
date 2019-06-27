@@ -1,6 +1,6 @@
 ## Ubuntu Command List
 
-#### Gestionar archivos y directorios
+##### Gestionar archivos y directorios
 
 ```sh
 cd /home : # Ir al directorio /home.
@@ -37,7 +37,7 @@ clear : # Limpiar pantalla.
 history : # Historial de comandos ejecutados.
 ```
 
-### Encontrar archivos:
+##### Encontrar archivos:
 
 ```sh
 find /home/nombre_usuario/Escritorio -name “*.jpg” : # Busca todos los archivos del Escritorio con extensión .jpg.  
@@ -56,7 +56,7 @@ find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Li
 find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 archivos modificados.   
 ```
 
-### Command MySQL:
+##### Command MySQL:
 
 ```sh
 mysql -u jrivera -p; : # Abrir MySQL.  
@@ -91,15 +91,15 @@ mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql
 4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.  
 ```
 
-### Espacio en disco:  
+##### Espacio en disco:  
 
-### Permisos en ficheros:  
+##### Permisos en ficheros:  
 
-### Ver el contenido de un fichero:  
+##### Ver el contenido de un fichero:  
 
-### GIT:
+#### GIT:
 
-### Getting & Creating Projects
+##### Getting & Creating Projects
 
 ```sh
 git init : # Crear un nuevo repositorio.
@@ -107,7 +107,7 @@ git clone /path/to/repository : # Crea una copia local del repositorio.
 git clone username@host:/path/to/repository : # Si utilizas un servidor remoto.
 ```
 
-### Basic Snapshotting
+##### Basic
 
 ```sh
 git status : # Estado del repositorio.
@@ -118,7 +118,7 @@ git commit -m "Commit message" : # Hace commit.
 git rm -r [file-name.txt] : # Eliminar un archivo o directorio.
  ```
  
-### Branching & Merging
+##### Branching & Merging
 
 | Command | Description |
 | ------- | ----------- |
@@ -137,7 +137,7 @@ git rm -r [file-name.txt] : # Eliminar un archivo o directorio.
 | **` git stash `** | Stash changes in a dirty working directory |
 | **` git stash clear `** | Remove all stashed entries |
 
-### Sharing & Updating Projects
+##### Sharing & Updating Projects
 
 | Command | Description |
 | ------- | ----------- |
@@ -148,7 +148,7 @@ git rm -r [file-name.txt] : # Eliminar un archivo o directorio.
 | **` git remote -v `** | Muestra los repositorios remotos que están configurados actualmente. |
 | **` git remote add origin <server> `** | Conectar tu repositorio local a un repositorio remoto. |
 
-### Inspection & Comparison
+##### Inspection & Comparison
 
 | Command | Description |
 | ------- | ----------- |
