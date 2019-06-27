@@ -39,20 +39,22 @@ history : # Historial de comandos ejecutados.
 
 ### Encontrar archivos:
 
-**` find /home/nombre_usuario/Escritorio -name “*.jpg”`** : Busca todos los archivos del Escritorio con extensión .jpg.  
-**` find . -name “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre.  
-**` find . ! -name “*hola*”`** : Busca todos los archivos que NO contienen la palabra “hola” en el nombre.  
-**` find . -name “*hola*” -a “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” y “caracola” en el nombre.  
-**` find . -name “*hola*” -o “*caracola*”`** : Busca todos los archivos que contienen la palabra “hola” o “caracola” en el nombre.  
-**` find . -iname “*hola*”`** : Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.   
-**` find . -user nombre_usuario`** : Busca todos los archivos de un usuario determinado (nombre_usuario).  
-**` find . -size +1000k`** : Busca todos los archivos de tamaño mayor a 1000 kb.  
-**` find . -amin -30`** : Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
-**` find . -atime 365`** : Busca todos los archivos a los que se accedió hace un año exactamente.  
-**` find . -name “*.jpg” -exec rm {} \;`** : Busca todos los archivos con extensión .jpg y los borra.  
-**` find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt`** : Para guardar el resultado de la búsqueda en un archivo de texto.  
+```sh
+find /home/nombre_usuario/Escritorio -name “*.jpg” : # Busca todos los archivos del Escritorio con extensión .jpg.  
+find . -name “*hola*” : # Busca todos los archivos que contienen la palabra “hola” en el nombre.  
+find . ! -name “*hola*” : # Busca todos los archivos que NO contienen la palabra “hola” en el nombre.  
+find . -name “*hola*” -a “*caracola*” : # Busca todos los archivos que contienen la palabra “hola” y “caracola” en el nombre.  
+find . -name “*hola*” -o “*caracola*” : # Busca todos los archivos que contienen la palabra “hola” o “caracola” en el nombre.  
+find . -iname “*hola*” : # Busca todos los archivos que contienen la palabra “hola” en el nombre tanto en mayúsculas como en minúsculas.   
+find . -user nombre_usuario : # Busca todos los archivos de un usuario determinado (nombre_usuario).  
+find . -size +1000k : # Busca todos los archivos de tamaño mayor a 1000 kb.  
+find . -amin -30 : # Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
+find . -atime 365 : # Busca todos los archivos a los que se accedió hace un año exactamente.  
+find . -name “*.jpg” -exec rm {} \; : # Busca todos los archivos con extensión .jpg y los borra.  
+find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt : # Para guardar el resultado de la búsqueda en un archivo de texto.  
 
-**` find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 `** : Buscar los 15 archivos modificados.   
+find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 archivos modificados.   
+```
 
 ### Command MySQL:
 
