@@ -101,22 +101,22 @@ mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql
 
 ### Getting & Creating Projects
 
-| Command | Description |
-| ------- | ----------- |
-| **` git init `** | Crear un nuevo repositorio. |
-| **` git clone /path/to/repository `** | Crea una copia local del repositorio. |
-| **` git clone username@host:/path/to/repository `** | Si utilizas un servidor remoto. |
+```sh
+git init : # Crear un nuevo repositorio.
+git clone /path/to/repository : # Crea una copia local del repositorio.
+git clone username@host:/path/to/repository : # Si utilizas un servidor remoto.
+```
 
 ### Basic Snapshotting
 
-| Command | Description |
-| ------- | ----------- |
-| **` git status `** | Estado del repositorio. |
-| **` git add nombre_archivo `** | Registrar cambios de un archivo. |
-| **` git add . `** | Agregando todos los cambios de archivos en un directorio. |
-| **` git add -A `** | Registrar cambios de todos los archivos. |
-| **` git commit -m "Commit message" `** | Hace commit. |
-| **` git rm -r [file-name.txt] `** | Eliminar un archivo o directorio. |
+```sh
+git status : # Estado del repositorio.
+git add nombre_archivo : # Registrar cambios de un archivo.
+git add . : # Agregando todos los cambios de archivos en un directorio.
+git add -A : # Registrar cambios de todos los archivos.
+git commit -m "Commit message" : # Hace commit.
+git rm -r [file-name.txt] : # Eliminar un archivo o directorio.
+ ```
  
 ### Branching & Merging
 
