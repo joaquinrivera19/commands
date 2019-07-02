@@ -91,11 +91,33 @@ mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql
 4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.  
 ```
 
-##### Espacio en disco:  
+##### Espacio en disco:
 
-##### Permisos en ficheros:  
+```sh
+df -h : # Muestra el uso de espacio de discos duros o particiones.
+df -Th / : # mismo de arriba.
+du -h --max-depth=1 -x : # Muestra el uso de espacio de archivos y directorios.
+du -csh / : # mismo de arriba.
+du -d1 -h /home | sort -h : # mismo de arriba.
 
-##### Ver el contenido de un fichero:  
+du -hs * | sort -nr | head -5
+du -h | sort -hr | head
+```
+
+##### Permisos en ficheros:
+
+```sh
+create user 'user'@'localhost' identified by 'password'; : # Crear nuevo usuario.
+drop user 'user'@'localhost'; : # Eliminar usuario.
+
+# Se ejecuta a nivel de base de datos.
+GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Permitir el acceso al usuario "pepe" a la base de datos "base1" desde el host remoto "192.168.1.101" utilizando la contraseña "pepe1234"
+GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
+```
+
+##### Ver el contenido de un fichero:
 
 #### GIT:
 
