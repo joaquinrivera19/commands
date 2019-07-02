@@ -53,7 +53,14 @@ find . -atime 365 : # Busca todos los archivos a los que se accedió hace un añ
 find . -name “*.jpg” -exec rm {} \; : # Busca todos los archivos con extensión .jpg y los borra.  
 find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt : # Para guardar el resultado de la búsqueda en un archivo de texto.  
 
-find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 archivos modificados.   
+find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 archivos modificados.
+
+grep -lir "linux" "/media/cosas" : # Buscar archivos que contengan la frase “linux” dentro la carpeta /media/cosas. El parámetro -l le indica que imprima los nombres de archivos en los que se encuentre el texto solicitado. El parámetro -i, que ignore las mayúsculas y minúsculas. El parámetro -r, que busque en forma recursiva dentro de la ruta indicada.
+grep linux /cosas/*.pdf : # Buscar en un determinado archivo la frase linux.
+grep Aug /var/log/messages : # Buscar palabras “Aug” en el fichero /var/log/messages.
+grep Aug *. * : # Busar palabras "Aug" en todos los ficheros.
+
+grep danger ejemplo.txt> salida.txt : # Redirigir la salida a un archivo.
 ```
 
 ##### Command MySQL:
