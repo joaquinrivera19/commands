@@ -63,6 +63,20 @@ grep Aug *. * : # Busar palabras "Aug" en todos los ficheros.
 grep danger ejemplo.txt> salida.txt : # Redirigir la salida a un archivo.
 ```
 
+##### Ver el contenido de un fichero:
+
+```sh
+cat /etc/crontab : # Ver crontab.
+tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
+tailf /var/log/apache2/error.log : # Ver cambios tiempo real.
+
+tail error.log : # Por defecto ver las ultimas 10 lineas. 
+tail -n 100 error.log : # Ver las ultimas 100 lineas.
+tail -f myfile.txt : # Ver las ultimas 10 lineas y monitorea los cambios.
+
+tail -f error.log | grep error : # filtrar resultados con palabra error.
+```
+
 ##### Command MySQL:
 
 ```sh
@@ -122,20 +136,6 @@ GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Perm
 GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
-```
-
-##### Ver el contenido de un fichero:
-
-```sh
-cat /etc/crontab : # Ver crontab.
-tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
-tailf /var/log/apache2/error.log : # Ver cambios tiempo real.
-
-tail error.log : # Por defecto ver las ultimas 10 lineas. 
-tail -n 100 error.log : # Ver las ultimas 100 lineas.
-tail -f myfile.txt : # Ver las ultimas 10 lineas y monitorea los cambios.
-
-tail -f error.log | grep error : # filtrar resultados con palabra error.
 ```
 
 ##### Información del Servidor:
