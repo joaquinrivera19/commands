@@ -132,7 +132,8 @@ tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
 tailf /var/log/apache2/error.log : # Ver cambios tiempo real.
 
 tail error.log : # Por defecto ver las ultimas 10 lineas. 
-tail -n100 error.log : # Ver las ultimas 100 lineas.
+tail -n 100 error.log : # Ver las ultimas 100 lineas.
+tail -f myfile.txt : # Ver las ultimas 10 lineas y monitorea los cambios.
 
 tail -f error.log | grep error : # filtrar resultados con palabra error.
 ```
