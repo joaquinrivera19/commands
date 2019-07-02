@@ -35,6 +35,18 @@ mv directorio directorio_renombrado : # Renombrar directorio.
 ctrl + c  : # Frenar ejecución.
 clear : # Limpiar pantalla.
 history : # Historial de comandos ejecutados.
+
+sudo vi index.html : # Crear archivo.
+touch /home/index.html : # Crear archivo.
+echo "<?php phpinfo();?>" > /home/index.php : # Crear archivo con contenido.
+
+sudo vi index.html : # Ver Archivo.
+insert
+esc
+:q Salir si no hubo cambios
+:q! Salir sin guardar cambios
+:w guardar
+:wq guarda y sale de vi
 ```
 
 ##### Encontrar archivos:
