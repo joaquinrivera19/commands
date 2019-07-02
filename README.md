@@ -82,6 +82,21 @@ tail -f myfile.txt : # Ver las ultimas 10 lineas y monitorea los cambios.
 tail -f error.log | grep error : # filtrar resultados con palabra error.
 ```
 
+##### Comprimir / Descomprimir:
+
+```sh
+sudo unzip archivo.zip /carpeta_destino/ : # descomprimir archivos en formato .zip
+sudo unrar -x archivo.rar /carpeta_destino/ : # descomprimir archivos en formato .rar
+sudo tar -zxvf archivo.tar.gz /carpeta_destino/ : # descomprimir archivos en formato .tar
+sudo gzip -d archivo.zip /carpeta_destino/ : # descomprimir archivos en formato .gzip
+
+sudo zip -r directorio-comprimido.zip /home/usuario : # comprimir un directorio completo incluyendo subdirectorios en formato .zip
+sudo rar -a archivo.rar ficheros : # comprimir archivos en formato .rar
+
+sudo tar -czvf empaquetado.tar.gz /carpeta/a/empaquetar/ : # comprimir en formato .tar
+sudo tar -czvf empaquetado.tar.gz * : # comprimir en formato .tar todos los archivos dentro de directorio actual incluidos subdirectorios.
+```
+
 ##### Command MySQL:
 
 ```sh
