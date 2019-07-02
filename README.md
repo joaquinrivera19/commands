@@ -126,6 +126,47 @@ FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
 
 ##### Ver el contenido de un fichero:
 
+```sh
+cat /etc/crontab : # Ver crontab.
+tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
+tailf /var/log/apache2/error.log : # Ver cambios tiempo real.
+
+tail error.log : # Por defecto ver las ultimas 10 lineas. 
+tail -n100 error.log : # Ver las ultimas 100 lineas.
+
+tail -f error.log | grep error : # filtrar resultados con palabra error.
+```
+
+##### Información del Servidor:
+
+```sh
+top : # Procesos de la CPU en tiempo real.
+top -u jrivera : # Mostrar unicamente de un usuario.
+ps : # Procesos activo.
+ps -u nombre_usuario : # Procesos activos del usuario.
+ps aux : # muestra todos los procesos del sistema.
+ps aux | grep bash : # filtrar resultados de procesos bash.
+
+kill id_proceso : # Termina procesos.
+
+last : # Ultimos usuarios logueados.
+users : # Muestra los usuario logueados.
+who : # Muestra los usuario logueado con detalle.
+
+whoami : # Muestra el usuario actual.
+
+lsb_release -a : # Version del Servidor.
+
+netstat -lntu : # Puertos Ubuntu.
+-l : # Permite ver exclusivamente los puertos de escucha.
+-p : # Muestra las conexiones para el protocolo especificado que puede ser TCP o UDP.
+-u : # Lista todos los puertos UDP.
+-t : # Lista todos los puertos TCP.
+-o : # Muestra los timers.
+-n : # Muestra el numero de puerto.
+-a : # Visualiza todas las conexiones activas del sistema.
+```
+
 #### GIT:
 
 ##### Getting & Creating Projects
