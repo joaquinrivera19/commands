@@ -132,6 +132,17 @@ mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql
 4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.  
 ```
 
+##### Usuarios y privilegios en bases de datos MySQL:
+
+```sh
+select * from mysql.user; : # Listado de usuarios con sus persmisos.
+show grants for nombre_usuario; : # Listar privilegios de usuario a las base de datos que tiene acceso.
+SHOW GRANTS; : # Listar privilegios para el usuario conectado.
+SHOW GRANTS FOR CURRENT_USER; # Listar privilegios para el usuario conectado.
+select user,host,select_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo solo conuslta. (Y => yes, N => no)
+select user,host,insert_priv,update_priv,delete_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo edición (insertar, modificar y eliminar filas). (Y => yes, N => no)
+```
+
 ##### Espacio en disco:
 
 ```sh
