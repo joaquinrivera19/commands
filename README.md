@@ -187,9 +187,11 @@ ps aux | grep bash : # filtrar resultados de procesos bash.
 
 kill id_proceso : # Termina procesos.
 
-last : # Ultimos usuarios logueados.
-users : # Muestra los usuario logueados.
-who : # Muestra los usuario logueado con detalle.
+w : # Usuarios conectados.
+who : # Usuarios conectados.
+users : # Usuarios conectados.
+last : # Ultimos usuarios conectados.
+lastlog : # Listados de todos los usuarios con la fecha de ultimo ingreso.
 
 whoami : # Muestra el usuario actual.
 
