@@ -56,7 +56,13 @@ find . -size +1000k : # Busca todos los archivos de tamaño mayor a 1000 kb.
 find . -amin -30 : # Busca todos los archivos a los que se accedió en los últimos 30 minutos.  
 find . -atime 365 : # Busca todos los archivos a los que se accedió hace un año exactamente.  
 find . -name “*.jpg” -exec rm {} \; : # Busca todos los archivos con extensión .jpg y los borra.  
-find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt : # Para guardar el resultado de la búsqueda en un archivo de texto.  
+find nombre_directorio -name nombre_archivo > /home/nombre_usuario/Escritorio/Lista.txt : # Para guardar el resultado de la búsqueda en un archivo de texto.
+
+find / -type f -mtime -3 : # Ver últimos archivos modificados desde hace 3 días.
+find / -type f -mmin -30 : # Ver últimos archivos modificados desde hace 30 minutos.
+find / -type f -mtime -5 ! -mtime -3 : # Ver últimos archivos hace mas de 5 días pero no menos de 3 días.
+find / -type f -newermt "2017-12-27" : # Ver últimos archivos modificados a partir de cierta fecha.
+find / -type f -mmin -120 -ls : # Ver últimos archivos modificados hace dos horas mostrando permisos.
 
 find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 archivos modificados.
 
