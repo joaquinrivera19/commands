@@ -207,6 +207,15 @@ netstat -lntu : # Puertos Ubuntu.
 -a : # Visualiza todas las conexiones activas del sistema.
 ```
 
+##### Ubuntu Server
+
+```sh
+sudo service apache2 restart : # Restart Apache 2.
+sudo service apache2 stop : # Stop Apache 2.
+sudo service apache2 start : # Start Apache 2.
+```
+
+
 #### GIT:
 
 ##### Getting & Creating Projects
