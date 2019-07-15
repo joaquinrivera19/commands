@@ -8,6 +8,8 @@ cd .. : # Ir al directorio anterior.
 pwd : # Mostrar ruta.
 
 sudo su : # Acceder como root.
+su : # Acceder como root.
+su nombre_usuario : # Cambiar de usario.
 
 ls : # Listar contenido.
 ls -lh : # Listar contenido + permisos (h tamaño del archivo).
