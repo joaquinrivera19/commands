@@ -9,7 +9,7 @@ pwd : # Mostrar ruta.
 
 sudo su : # Acceder como root.
 su : # Acceder como root.
-su nombre_usuario : # Cambiar de usario.
+su nombre_usuario : # Cambiar de usuario.
 
 ls : # Listar contenido.
 ls -lh : # Listar contenido + permisos (h tamaño del archivo).
