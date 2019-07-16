@@ -20,10 +20,9 @@ ls *.json : #
 mkdir dir1 : # Crear directorio.
 mkdir -p /var/www/html/nombredirectorio.com : # Crear directorio (-p: crea los directorios padres en caso necesario).
 
-rm -fr /var/www/posadawebsite/ : # Eliminar directorio (forzado, recursivo).
-rm file1 : # Eliminar archivo.
-rm -f file1 : # Eliminar archivo forzado.
-rm -rf dir1 : # Eliminar directorio recursivo y forzado.
+rm file : # Eliminar archivo.
+rm -f file : # Eliminar archivo forzado.
+rm -rf directorio : # Eliminar directorio recursivo y forzado.
 
 cp file1 destino/ : # Copiar archivo.
 cp -ra directorio/ ruta_de_destino/nombre_copia : # Copiar directorio completo (Recursivo y con los permiso).
