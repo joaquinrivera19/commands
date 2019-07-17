@@ -206,6 +206,9 @@ netstat -lntu : # Puertos Ubuntu.
 -o : # Muestra los timers.
 -n : # Muestra el numero de puerto.
 -a : # Visualiza todas las conexiones activas del sistema.
+
+curl -I https://www.agd.com.ar : # Info header.
+
 ```
 
 ##### Ubuntu Server
