@@ -132,6 +132,8 @@ sudo tar -xzvf /carpeta_origen/name.tar.gz /carpeta_destino/name/ : # Descomprim
 mysql -u db_username -p db_name < /home/name/db_name.sql : # Restaurar.
 mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql.
 
+mysqldump --opt <database> | gzip -c | ssh user@wherever 'cat > /tmp/yourfile.sql.gz' : # Backup y comprime.
+
 1. CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena'; : # Crear un usuario nuevo.
 2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; : # Crear permisos para el usuario (el asterisco representa base de datos y la tabla).
 3. FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
