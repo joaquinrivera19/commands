@@ -132,9 +132,9 @@ sudo tar -xzvf /carpeta_origen/name.tar.gz /carpeta_destino/name/ : # Descomprim
 mysql -u db_username -p db_name < /home/name/db_name.sql : # Restaurar.
 mysql -u db_username -p db_name < /home/name/script.sql : # Ejecutar archivo sql.
 
-mysqldump -u root -p agd_cereales_data1 | gzip -c > /name/bd_name.sql.gz : # Backup y comprime.
+mysqldump -u root -p bd_name | gzip -c > /name/bd_name.sql.gz : # Backup y comprime.
 
-gunzip -c cereales_data1.sql.gz | mysql -u root -p agd_cereales_data1 : # Descomprimir y restaurar. 
+gunzip -c /name/bd_name.sql.gz | mysql -u root -p bd_name : # Descomprimir y restaurar. 
 
 gunzip /name/bd_name.sql.gz : # Descomprimir sql.gz.
 
