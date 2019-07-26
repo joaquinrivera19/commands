@@ -214,6 +214,27 @@ netstat -lntu : # Puertos Ubuntu.
 
 curl -I https://www.agd.com.ar : # Info header.
 
+dig google.com : # Consultas DNS
+dig @8.8.8.8 google.com : # Consultas DNS
+
+wget  url_descargar : # Descargar archivo de internet
+
+ifconfig : # Muestra/Configura las interfaces de red del sistema
+
+resolveip : # Resuelve la ip del dominio o host que se indique.
+
+ping 172.30.0.131
+
+hostnamectl : # Informacion del Hostname
+hostname -I : # Muestra todas las direcciones de red del host
+host www.agd.com.ar : # Buscar el nombre del host 
+nslookup www.agd.com.ar : # Buscar el nombre del host
+
+telnet 172.30.0.131 3306 : # Telnet
+
+iptables -L -n : # Listar iptables
+vi /etc/sysconfig/iptables : # Modificar iptables
+
 ```
 
 ##### Ubuntu Server
