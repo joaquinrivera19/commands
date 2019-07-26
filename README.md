@@ -11,6 +11,10 @@ sudo su : # Acceder como root.
 su : # Acceder como root.
 su nombre_usuario : # Cambiar de usuario.
 
+ssh direccion_ip : # Acceder por ssh.
+ssh direccion_ip -l usuario : # Acceder por ssh con usuario.
+ssh usuario@direccion_ip : # Acceder por ssh con usuario.
+
 ls : # Listar contenido.
 ls -lh : # Listar contenido + permisos (h tamaño del archivo).
 ls -al : # Listar contenido + permisos + ocultos.
