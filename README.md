@@ -129,8 +129,8 @@ show procedure status \G; : # Ver procedimientos almacenados(por descripcion).
 show create procedure nombre_procedimiento; : # Ver procedimientos almacenados (por codigo).
 show create view view_name; : # Ver vista.
 
-SHOW INDEXES FROM table_name; : # Ver Indices.
-SHOW INDEXES FROM table_name IN database_name; : # Ver Indices.
+show indexes from table_name; : # Ver Indices.
+show indexes from table_name in database_name; : # Ver Indices.
 
 sudo tar -zcvf /destino/nombre_archivo.tar.gz /origen_directorio/ : # Comprimir.
 mysqldump -u db_username -h db_host -p db_name table_name > /home/name/db_nanme.sql : # Backup.
