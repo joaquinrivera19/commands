@@ -184,8 +184,8 @@ GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
 
-sudo chown usuario.www-data -R /directorio/ : # Cambiar propietario de directorio.
-sudo chmod -R 755 /directorio : # Cambiar permisos a la carpeta.
+sudo chown usuario.www-data -R /directorio/ : # Cambiar propietario al directorio.
+sudo chmod -R 755 /directorio : # Cambiar permisos al directorio.
 ```
 
 ##### Información del Servidor:
