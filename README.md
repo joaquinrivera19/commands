@@ -83,6 +83,8 @@ grep danger ejemplo.txt> salida.txt : # Redirigir la salida a un archivo.
 
 ```sh
 cat /etc/crontab : # Ver crontab.
+sudo vi /etc/crontab : # Editar crontab.
+ 
 tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
 tailf /var/log/apache2/error.log : # Ver cambios tiempo real.
 
