@@ -131,6 +131,8 @@ show procedure status \G; : # Ver procedimientos almacenados(por descripcion).
 show create procedure nombre_procedimiento; : # Ver procedimientos almacenados (por codigo).
 show create view view_name; : # Ver vista.
 
+ALTER TABLE table_name ADD INDEX index_name (column_name); : # Crear Indices.
+
 show indexes from table_name; : # Ver Indices.
 show indexes from table_name in database_name; : # Ver Indices.
 
