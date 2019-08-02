@@ -149,6 +149,8 @@ gunzip -c /name/bd_name.sql.gz | mysql -u root -p bd_name : # Descomprimir y res
 
 gunzip /name/bd_name.sql.gz : # Descomprimir sql.gz.
 
+LOAD DATA INFILE '/tmp/name_file' INTO TABLE name_table FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'; : # Importar archivo a BD.
+
 1. CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena'; : # Crear un usuario nuevo.
 2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; : # Crear permisos para el usuario (el asterisco representa base de datos y la tabla).
 3. FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
