@@ -259,6 +259,10 @@ vi /etc/sysconfig/iptables : # Modificar iptables
 sudo service apache2 restart : # Restart Apache 2.
 sudo service apache2 stop : # Stop Apache 2.
 sudo service apache2 start : # Start Apache 2.
+
+sudo service mysql restart : # Restart Mysql.
+sudo service mysql stop : # Stop Mysql.
+sudo service mysql start : # Start Mysql.
 ```
 
 
