@@ -29,7 +29,7 @@ rm -f file : # Eliminar archivo forzado.
 rm -rf directorio : # Eliminar directorio recursivo y forzado.
 
 cp file1 destino/ : # Copiar archivo.
-cp -ra directorio/ ruta_de_destino/nombre_copia : # Copiar directorio completo (Recursivo y con los permiso).
+cp -ra /origen_directorio/files /destino_directorio/files : # Copiar directorio completo (Recursivo y con los permiso).
 
 scp -r /home/mario/carpeta /home/usr : # Copiar directorio completo.
 scp archivo.txt /home/usr : # Copiar archivo a directorio.
