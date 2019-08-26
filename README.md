@@ -150,11 +150,6 @@ gunzip -c /name/bd_name.sql.gz | mysql -u root -p bd_name : # Descomprimir y res
 gunzip /name/bd_name.sql.gz : # Descomprimir sql.gz.
 
 LOAD DATA INFILE '/tmp/name_file' INTO TABLE name_table FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'; : # Importar archivo a BD.
-
-1. CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena'; : # Crear un usuario nuevo.
-2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; : # Crear permisos para el usuario (el asterisco representa base de datos y la tabla).
-3. FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
-4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.
 ```
 
 ##### Usuarios y privilegios en bases de datos MySQL:
@@ -192,6 +187,11 @@ GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Perm
 GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' WITH GRANT OPTION;
 
 FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
+
+1. CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena'; : # Crear un usuario nuevo.
+2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; : # Crear permisos para el usuario (el asterisco representa base de datos y la tabla).
+3. FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
+4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.
 
 sudo chown usuario.www-data -R /directorio/ : # Cambiar propietario al directorio.
 sudo chmod -R 755 /directorio : # Cambiar permisos al directorio.
