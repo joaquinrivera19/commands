@@ -161,6 +161,17 @@ SHOW GRANTS; : # Listar privilegios para el usuario conectado.
 SHOW GRANTS FOR CURRENT_USER; # Listar privilegios para el usuario conectado.
 select user,host,select_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo solo conuslta. (Y => yes, N => no)
 select user,host,insert_priv,update_priv,delete_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo edición (insertar, modificar y eliminar filas). (Y => yes, N => no)
+
+create user 'user'@'localhost' identified by 'password'; : # Crear nuevo usuario.
+drop user 'user'@'localhost'; : # Eliminar usuario.
+
+# Se ejecuta a nivel de base de datos.
+GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Permitir el acceso al usuario "pepe" a la base de datos "base1" desde el host remoto "192.168.1.101" utilizando la contraseña "pepe1234"
+
+GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'localhost';
+
+FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
 ```
 
 ##### Espacio en disco:
@@ -179,20 +190,6 @@ du -h | sort -hr | head
 ##### Permisos en ficheros:
 
 ```sh
-create user 'user'@'localhost' identified by 'password'; : # Crear nuevo usuario.
-drop user 'user'@'localhost'; : # Eliminar usuario.
-
-# Se ejecuta a nivel de base de datos.
-GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Permitir el acceso al usuario "pepe" a la base de datos "base1" desde el host remoto "192.168.1.101" utilizando la contraseña "pepe1234"
-GRANT ALL PRIVILEGES ON mydb.* TO 'myuser'@'%' WITH GRANT OPTION;
-
-FLUSH PRIVILEGES; : # Una vez ejecutado lo anterior se debera ejecutar.
-
-1. CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena'; : # Crear un usuario nuevo.
-2. GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost'; : # Crear permisos para el usuario (el asterisco representa base de datos y la tabla).
-3. FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
-4. DROP USER 'nombre_usuario'@'localhost'’; : # Eliminar un usuario.
-
 sudo chown usuario.www-data -R /directorio/ : # Cambiar propietario al directorio.
 sudo chmod -R 755 /directorio : # Cambiar permisos al directorio.
 ```
