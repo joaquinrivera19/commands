@@ -271,6 +271,8 @@ sudo service mysql start : # Start Mysql.
 git init : # Crear un nuevo repositorio.
 git clone /path/to/repository : # Crea una copia local del repositorio.
 git clone username@host:/path/to/repository : # Si utilizas un servidor remoto.
+
+git remote add origin https://github.com/nombre_repositorio.git : # Conectar tu repositorio local a un repositorio remoto.
 ```
 
 ##### Basic
@@ -310,7 +312,6 @@ git push origin <branch> : # Subir (push) la rama a tu repositorio remoto.
 git pull : # Actualizar tu repositorio local al commit más nuevo.
 git pull origin NombreDeBranch : # Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando.
 git merge <branch> : # Para fusionar otra rama a tu rama activa.
-git remote add origin <server> : # Conectar tu repositorio local a un repositorio remoto.
  ```
  
 ##### Inspection & Comparison
