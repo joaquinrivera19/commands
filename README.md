@@ -299,8 +299,6 @@ git checkout -b [branch name] origin/[branch name] : # Clona un branch remota y 
 git checkout [branch name] : # Cambiar a un branch.
 git checkout - : # Switch to the branch last checked out.
 git checkout -- [file-name.txt] : # Descartar cambios a un archivo.
-git merge [branch name] : # Fusionar una rama en la rama activa.
-git merge [source branch] [target branch] : # Fusionar una rama en una rama objetivo.
 git stash : # Stash changes in a dirty working directory.
 git stash clear : # Remove all stashed entries.
  ```
