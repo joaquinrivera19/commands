@@ -296,11 +296,13 @@ git branch -d [branch name] : # Eliminar un branch.
 git push origin --delete [branch name] : # Elimina un branch remoto.
 git checkout -b [branch name] : # Crea un nuevo branch y me cambio a ella.
 git checkout -b [branch name] origin/[branch name] : # Clona un branch remota y me cambia a ella.
-git checkout [branch name] : # Cambiar a un branch.
 git checkout - : # Switch to the branch last checked out.
 git checkout -- [file-name.txt] : # Descartar cambios a un archivo.
 git stash : # Stash changes in a dirty working directory.
 git stash clear : # Remove all stashed entries.
+
+git checkout master : # Cambiar a branch master.
+git merge <branch> : # Para fusionar otra rama a tu rama activa(master).
  ```
  
 ##### Sharing & Updating Projects
@@ -309,7 +311,6 @@ git stash clear : # Remove all stashed entries.
 git push origin <branch> : # Subir (push) la rama a tu repositorio remoto.
 git pull : # Actualizar tu repositorio local al commit más nuevo.
 git pull origin NombreDeBranch : # Actualiza nuestro branch local, desde un branch remoto que indicamos en el comando.
-git merge <branch> : # Para fusionar otra rama a tu rama activa.
  ```
  
 ##### Inspection & Comparison
