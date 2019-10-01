@@ -325,6 +325,8 @@ git diff [source branch] [target branch] : # Vista previa de cambios antes de fu
 git config : # Establecer la configuracion.
 git remote -v : # Muestra los repositorios remotos que están configurados actualmente.
 
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git : # Cambiar la URL del repositorio remoto existente.
+
 git config --get remote.origin.url : # Obtener la url de nuestro repositorio.
 
 git remote show nombre_repositorio : # Ver informacion detallada sobre la configuracion del repositorio.
