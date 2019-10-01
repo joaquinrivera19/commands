@@ -301,8 +301,9 @@ git checkout -- [file-name.txt] : # Descartar cambios a un archivo.
 git stash : # Stash changes in a dirty working directory.
 git stash clear : # Remove all stashed entries.
 
+# Para fusionar una rama nuevafuncionalidad dentro de master vamos a situarnos en la rama mater y a mezclar ambas:
 git checkout master : # Cambiar a branch master.
-git merge <branch> : # Para fusionar otra rama a tu rama activa(master).
+git merge nuevafuncionalidad : # Fusionar nuevafuncionalidad a tu rama activa(master).
  ```
  
 ##### Sharing & Updating Projects
