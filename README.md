@@ -334,7 +334,6 @@ git remote show nombre_repositorio : # Ver informacion detallada sobre la config
 git remote show origin : # Ver informacion detallada sobre la configuracion del repositorio.
 git config --local -l : # Conocer todos los datos de la configuración local de Git en nuestro proyecto.
 git config --global -l : # Conocer todos los datos de la configuración global de Git en nuestro proyecto.
-
 git config --global user.name "Sam Smith" : # Configurar name que será identificado al hacer el commits.
 git config --global user.email sam@example.com : # Configurar email que será identificado al hacer el commits.
 git config --global color.ui true : # Aplicar color al git.
