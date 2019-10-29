@@ -263,7 +263,6 @@ sudo service mysql stop : # Stop Mysql.
 sudo service mysql start : # Start Mysql.
 ```
 
-
 #### GIT:
 
 ##### Getting & Creating Projects
