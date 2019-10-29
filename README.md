@@ -2,6 +2,7 @@
 
 ##### Gestionar archivos y directorios
 
+
 ```sh
 cd /home : # Ir al directorio /home.
 cd .. : # Ir al directorio anterior.
