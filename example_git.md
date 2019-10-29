@@ -10,6 +10,7 @@ git config --global user.name "Rivera Joaquin"
 # Agregar README.md
 
 
+
 git status
 git add .
 git commit -m "Primer Commit" 
