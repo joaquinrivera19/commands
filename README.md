@@ -37,6 +37,7 @@ scp archivo.txt /home/usr : # Copiar archivo a directorio.
 mv file1 /destino : # Mover archivo.
 mv directorio directorio_renombrado : # Renombrar directorio.
 
+
 ctrl + c  : # Frenar ejecución.
 clear : # Limpiar pantalla.
 history : # Historial de comandos ejecutados.
