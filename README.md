@@ -1,4 +1,4 @@
-## Ubuntu Command List
+## Ubuntu Command Listt
 
 ##### Gestionar archivos y directorios
 
