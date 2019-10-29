@@ -9,8 +9,6 @@ git config --global user.name "Rivera Joaquin"
 # Agregar .gitignore
 # Agregar README.md
 
-
-
 git status
 git add .
 git commit -m "Primer Commit" 
