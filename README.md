@@ -7,6 +7,8 @@ cd /home : # Ir al directorio /home.
 cd .. : # Ir al directorio anterior.
 pwd : # Mostrar ruta.
 
+document.designMode = "on"
+
 sudo su : # Acceder como root.
 su : # Acceder como root.
 su nombre_usuario : # Cambiar de usuario.
