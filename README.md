@@ -299,7 +299,10 @@ git push origin --delete [branch name] : # Elimina un branch remoto.
 git checkout -b [branch name] : # Crea un nuevo branch y me cambio a ella.
 git checkout -b [branch name] origin/[branch name] : # Clona un branch remota y me cambia a ella.
 git checkout - : # Switch to the branch last checked out.
-git checkout -- [file-name.txt] : # Descartar cambios a un archivo.
+
+git checkout -- file.html : # Descartar los cambios de un archivo.
+git checkout . : # Descartar los cambios de todos los archivo.
+
 git stash : # Stash changes in a dirty working directory.
 git stash clear : # Remove all stashed entries.
 
