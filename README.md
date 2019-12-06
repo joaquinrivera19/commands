@@ -13,6 +13,8 @@ sudo su : # Acceder como root.
 su : # Acceder como root.
 su nombre_usuario : # Cambiar de usuario.
 
+sudo passwd username : # Cambiar Password. 
+
 ssh direccion_ip : # Acceder por ssh.
 ssh direccion_ip -l usuario : # Acceder por ssh con usuario.
 ssh usuario@direccion_ip : # Acceder por ssh con usuario.
