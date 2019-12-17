@@ -1,4 +1,4 @@
-## Ubuntu Command Listt
+## Ubuntu Command List
 
 ##### Gestionar archivos y directorios
 
@@ -352,3 +352,10 @@ git config --global color.ui true : # Aplicar color al git.
  ```sh
 /var/www/html$ sudo php artisan jde:enviar-respuestas --px PX13459
  ```
+ 
+ #### Convertir UTF-16 a UTF-8 (Proveedores PY)  
+ ```sh
+sudo /home/apps/proveedores2015/interfaz/convertir-utf16-utf8.sh /tmp/proveedores utf-16 utf-8
+/home/apps/proveedores/ejecutar-interfaz.sh > /tmp/proveedores/resultado.txt
+ ```
+ 
