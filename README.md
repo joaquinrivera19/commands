@@ -22,7 +22,8 @@ ssh usuario@direccion_ip : # Acceder por ssh con usuario.
 ls : # Listar contenido.
 ls -lh : # Listar contenido + permisos (h tamaño del archivo).
 ls -al : # Listar contenido + permisos + ocultos.
-ls -tl : #
+ls -lhS : # Listar ordenado por tamaño (-S).
+ls -lt : # Listar ordenado por hora de última modificación (-t).
 ls *.json : #
 
 mkdir dir1 : # Crear directorio.
@@ -34,13 +35,13 @@ rm -rf directorio : # Eliminar directorio recursivo y forzado.
 
 cp file1 destino/ : # Copiar archivo.
 cp -ra /origen_directorio/files /destino_directorio/files : # Copiar directorio completo (Recursivo y con los permiso).
+cp a.txt b.txt directorio : # Copiar múltiples archivos.
 
 scp -r /home/mario/carpeta /home/usr : # Copiar directorio completo.
 scp archivo.txt /home/usr : # Copiar archivo a directorio.
 
 mv file1 /destino : # Mover archivo.
 mv directorio directorio_renombrado : # Renombrar directorio.
-
 
 ctrl + c  : # Frenar ejecución.
 clear : # Limpiar pantalla.
@@ -50,6 +51,10 @@ sudo vi index.html : # Crear/Ver Archivo. [insert, esc, :q (Salir si no hubo cam
 
 touch /home/index.html : # Crear archivo.
 echo "<?php phpinfo();?>" > /home/index.php : # Crear archivo con contenido.
+
+# Encadenar número de comandos ( | ). Ej: ls -a | grep _
+# Escribir en un archivo ( > ). Ej: ls -a | grep _ > underscores.txt
+
 ```
 
 ##### Encontrar archivos:
@@ -88,6 +93,8 @@ grep danger ejemplo.txt> salida.txt : # Redirigir la salida a un archivo.
 
 ```sh
 cat /etc/crontab : # Ver crontab.
+cat -b big_file.txt : # Mostrar números de línea.
+
 sudo vi /etc/crontab : # Editar crontab.
  
 tailf /var/log/apache2/access.log : # Ver cambios tiempo real.
