@@ -86,6 +86,11 @@ grep linux /cosas/*.pdf : # Buscar en un determinado archivo la frase linux.
 grep Aug /var/log/messages : # Buscar palabras “Aug” en el fichero /var/log/messages.
 grep Aug *. * : # Busar palabras "Aug" en todos los ficheros.
 
+grep -c ruby README.md : # Recuento de ocurrencias (-c).
+grep -n Ruby README.md : # Visualización de números de línea (-n).
+grep rails file1.md file2.md : # Búsqueda de múltiples archivos.
+grep -R "Read" . : # Búsqueda recursiva (-R).
+
 grep danger ejemplo.txt> salida.txt : # Redirigir la salida a un archivo.
 ```
 
