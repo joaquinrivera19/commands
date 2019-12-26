@@ -4,6 +4,8 @@
 
 npm install -g ionic
 
+# Crear una nueva aplicación de Ionic
+
 ionic start myApp tabs
 ionic start myApp sidemenu
 ionic start myApp blank
