@@ -10,6 +10,8 @@ ionic start myApp tabs
 ionic start myApp sidemenu
 ionic start myApp blank
 
+# Iniciar el servicio de Ionic
+
 ionic serve
 
 ionic cordova platform add android
