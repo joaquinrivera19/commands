@@ -23,6 +23,10 @@ npm install
 
 ionic g page NombrePagina 
 
+# Crear un servicio en ionic
+
+ionic g s NombreServicio
+
 # Crear un modulo en ionic
 
 ionic g module NombreModulo 
