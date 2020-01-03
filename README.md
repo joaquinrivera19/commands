@@ -154,7 +154,9 @@ show indexes from table_name; : # Ver Indices.
 show indexes from table_name in database_name; : # Ver Indices.
 
 sudo tar -zcvf /destino/nombre_archivo.tar.gz /origen_directorio/ : # Comprimir.
-mysqldump -u db_username -h db_host -p db_name table_name > /home/name/db_nanme.sql : # Backup.
+
+mysqldump -u db_username -h db_host -p db_name [tabla1 tabla2] > /home/name/db_nanme.sql : # Backup.
+
 scp usuario@ip:/carpeta_origen/db_name.sql /carpeta_destino/db_name.sql : # Secure Copy.
 sudo tar -xzvf /carpeta_origen/name.tar.gz /carpeta_destino/name/ : # Descomprimir.
 mysql -u db_username -p db_name < /home/name/db_name.sql : # Restaurar.
