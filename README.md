@@ -235,7 +235,7 @@ whoami : # Muestra el usuario actual.
 
 lsb_release -a : # Version del Servidor.
 
-netstat -lntu : # Puertos Ubuntu.
+sudo netstat -plnut : # Puertos Ubuntu.
 -l : # Permite ver exclusivamente los puertos de escucha.
 -p : # Muestra las conexiones para el protocolo especificado que puede ser TCP o UDP.
 -u : # Lista todos los puertos UDP.
