@@ -357,6 +357,7 @@ git pull origin NombreDeBranch : # Actualiza nuestro branch local, desde un bran
 ```sh
 git log : # Ver cambios.
 git log --summary : # Ver cambios detallados.
+git log --graph : # Visualizar los commit de forma grafica.
 git show : # Muestra los cambios realizados en el commit.
 git diff [source branch] [target branch] : # Vista previa de cambios antes de fusionar.
 
