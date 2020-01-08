@@ -218,6 +218,7 @@ sudo chmod -R 755 /directorio : # Cambiar permisos al directorio.
 ```sh
 top : # Procesos de la CPU en tiempo real.
 top -u jrivera : # Mostrar unicamente de un usuario.
+htop : # Procesos de la CPU en tiempo real.
 ps : # Procesos activo.
 ps -u nombre_usuario : # Procesos activos del usuario.
 ps aux : # muestra todos los procesos del sistema.
