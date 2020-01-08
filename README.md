@@ -193,6 +193,22 @@ GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'localhost';
 FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
 ```
 
+##### Command MongoDB:
+
+```sh
+
+mongo --eval 'db.runCommand({ connectionStatus: 1 })' : # Versión, la dirección del servidor y el puerto.
+
+sudo systemctl status mongodb : # Ver estado de Mongo
+sudo systemctl stop mongodb : # Detener Mongo
+sudo systemctl start mongodb : # Iniciar Mongo
+sudo systemctl restart mongodb : # Reiniciar Mongo
+
+sudo systemctl enable mongodb : # Habilitar el inicio automático de Mongo
+sudo systemctl disable mongodb : # DesHabilitar el inicio automático de Mongo
+
+```
+
 ##### Espacio en disco:
 
 ```sh
