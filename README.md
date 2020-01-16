@@ -197,15 +197,17 @@ FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
 
 ```sh
 
+mongo : # Comenzar a utilizarlo.
+
 mongo --eval 'db.runCommand({ connectionStatus: 1 })' : # Versión, la dirección del servidor y el puerto.
 
-sudo systemctl status mongodb : # Ver estado de Mongo
-sudo systemctl stop mongodb : # Detener Mongo
-sudo systemctl start mongodb : # Iniciar Mongo
-sudo systemctl restart mongodb : # Reiniciar Mongo
+sudo service mongodb status : # Ver estado de Mongo.
+sudo service mongodb start : # Iniciar Mongo.
+sudo service mongodb stop : # Detener Mongo.
+sudo service mongodb restart : # Reiniciar Mongo.
 
-sudo systemctl enable mongodb : # Habilitar el inicio automático de Mongo
-sudo systemctl disable mongodb : # DesHabilitar el inicio automático de Mongo
+sudo systemctl enable mongodb : # Habilitar el inicio automático de Mongo.
+sudo systemctl disable mongodb : # DesHabilitar el inicio automático de Mongo.
 
 ```
 
