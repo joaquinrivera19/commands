@@ -29,14 +29,21 @@ nodemon dist: # 4 - Levantar el server con nodemon
 
 ------------------
 
+"scripts":{
+  "dev": "nodemon index.js",
+  "prod": "forever start index.js"
+}
 
-npm run prod : # Corro el servidor
-forever list : # Lista los Forever
-forever start nombre.js : # Iniciar el Forever
-forever stop PID : # Frenar el Forever
-forever stopall : # Frenar todos los Forever
 
-forever -w server.js :#  -w para reiniciar automáticamente cada vez que cambie su archivo
+npm run dev : # Ejecutar nodemon.
+npm run prod : # Ejecutar forever.
+
+forever list : # Lista los forever.
+forever start nombre.js : # Iniciar el forever.
+forever stop PID : # Frenar el forever.
+forever stopall : # Frenar todos los forever.
+
+forever -w server.js :#  -w para reiniciar automáticamente cada vez que cambie su archivo.
 
 forever start --minUptime 1000 --spinSleepTime 1000 -a -l /home/apps/transportes/node/logs/log.log -o /home/apps/transportes/node/logs/out.log  --sourceDir /home/apps/transportes/node -c "npm start" /
 
