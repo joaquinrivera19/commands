@@ -110,6 +110,8 @@ tail -n 100 error.log : # Ver las ultimas 100 lineas.
 tail -f myfile.txt : # Ver las ultimas 10 lineas y monitorea los cambios.
 
 tail -f error.log | grep error : # filtrar resultados con palabra error.
+
+diff texto1 texto2 : # Comparar Archivos.
 ```
 
 ##### Comprimir / Descomprimir:
@@ -169,6 +171,9 @@ gunzip -c /name/bd_name.sql.gz | mysql -u root -p bd_name : # Descomprimir y res
 gunzip /name/bd_name.sql.gz : # Descomprimir sql.gz.
 
 LOAD DATA INFILE '/tmp/name_file' INTO TABLE name_table FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\r\n'; : # Importar archivo a BD.
+
+mysqladmin -u root -p processlist : # Ver todos los procesos que están corriendo del servidor MySQL.
+mysqladmin -u root -p kill 5 : # Eliminar un proceso del cliente MySQL.
 ```
 
 ##### Usuarios y privilegios en bases de datos MySQL:
