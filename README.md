@@ -127,6 +127,8 @@ sudo rar -a archivo.rar ficheros : # comprimir archivos en formato .rar
 
 sudo tar -czvf empaquetado.tar.gz /carpeta/a/empaquetar/ : # comprimir en formato .tar
 sudo tar -czvf empaquetado.tar.gz * : # comprimir en formato .tar todos los archivos dentro de directorio actual incluidos subdirectorios.
+
+sudo tar -czvf paquete.tar.gz archivo1 archivo2 : # Comprimir varios archivos
 ```
 
 ##### Command MySQL:
