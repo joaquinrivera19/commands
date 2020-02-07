@@ -13,6 +13,7 @@ document.designMode = "on"
 sudo su : # Acceder como root.
 su : # Acceder como root.
 su nombre_usuario : # Cambiar de usuario.
+passwd : # Cambiar password del usuario logueado.
 
 sudo passwd username : # Cambiar Password. 
 
