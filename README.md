@@ -6,7 +6,7 @@
 cd /home : # Ir al directorio /home.
 cd .. : # Ir al directorio anterior.
 pwd : # Mostrar ruta.
-&& : # Contatener
+&& : # Concatenar
 
 document.designMode = "on"
 
