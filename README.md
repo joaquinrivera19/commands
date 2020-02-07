@@ -249,6 +249,10 @@ ps -u nombre_usuario : # Procesos activos del usuario.
 ps aux : # muestra todos los procesos del sistema.
 ps aux | grep bash : # filtrar resultados de procesos bash.
 
+free : # Memoria utilizada / libre.
+free --human : # Memoria utilizada / libre.
+free -m : # Memoria utilizada / libre.
+
 kill id_proceso : # Termina procesos.
 
 w : # Usuarios conectados.
