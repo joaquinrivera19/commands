@@ -320,6 +320,7 @@ sudo service mysql start : # Start Mysql.
 git init : # Crear un nuevo repositorio.
 git clone username@host:/path/to/repository : # Obtener una copia de un repositorio.
 git clone username@host:/path/to/repository folder_name : # Obtener una copia de un repositorio a un directorio particular.
+git clone -b <branch> <remote_repo> : # Clonar una rama en particular.
 
 git remote add origin https://github.com/nombre_repositorio.git : # Conectar tu repositorio local a un repositorio remoto.
 ```
