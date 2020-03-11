@@ -29,6 +29,22 @@ nodemon dist: # 4 - Levantar el server con nodemon
 
 ------------------
 
+npm init
+
+tsc index.ts : # generar el archivos .js
+
+node index.js : # Nuetra aplicacion de Node tiene que estar compilada en js
+
+tsc --init : # Crear un archivo de inizilizacion de ts
+
+tsc -w : # busca todos los archivos de ts y los compila colocando en el directorio dist de forma automatica
+
+node dist/index.js : # busca el archivo para ejecutar
+
+nodemon dist : # Automaticamente te refleja los cambios y levante el server
+
+------------------
+
 "scripts":{
   "dev": "nodemon index.js",
   "prod": "forever start index.js"
