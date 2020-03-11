@@ -12,6 +12,9 @@ npm install jsonwebtoken
 npm install bcrypt
 npm install bcryptjs
 
+npm install axios --save
+npm install hbs --save
+
 npm install -g typescript
 npm install -g nodemon
 npm install -g forever
