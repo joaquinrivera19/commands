@@ -304,16 +304,24 @@ vi /etc/sysconfig/iptables : # Modificar iptables
 
 ```
 
-##### Ubuntu Server
+##### Services in Ubuntu
 
 ```sh
-sudo service apache2 restart : # Restart Apache 2.
-sudo service apache2 stop : # Stop Apache 2.
-sudo service apache2 start : # Start Apache 2.
 
-sudo service mysql restart : # Restart Mysql.
-sudo service mysql stop : # Stop Mysql.
+sudo service apache2 start : # Start Apache2.
+sudo service apache2 stop : # Stop Apache2.
+sudo service apache2 restart : # Restart Apache2.
+sudo service apache2 status : # Status Apache2.
+
 sudo service mysql start : # Start Mysql.
+sudo service mysql stop : # Stop Mysql.
+sudo service mysql restart : # Restart Mysql.
+sudo service mysql status : # Status Mysql.
+
+sudo service node_agro start : # Start service Node.
+sudo service node_agro stop : # Stop service Node.
+sudo service node_agro restart : # Restart service Node.
+sudo service node_agro status : # Status service Node.
 ```
 
 #### GIT:
