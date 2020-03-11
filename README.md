@@ -21,11 +21,15 @@ ssh direccion_ip -l usuario : # Acceder por ssh con usuario.
 ssh usuario@direccion_ip : # Acceder por ssh con usuario.
 
 ls : # Listar contenido.
-ls -lh : # Listar contenido + permisos (h tamaño del archivo).
-ls -al : # Listar contenido + permisos + ocultos.
-ls -lhS : # Listar ordenado por tamaño (-S).
-ls -lt : # Listar ordenado por hora de última modificación (-t).
-ls *.json : #
+
+-h	Imprime el tamaño.
+-l	Imprime en formato de listado largo.
+-t	Ordena acorde a la fecha y hora de modificación.
+-S	Ordena acorde al tamaño.
+-a	Imprime archivos ocultos.
+--color	Colorea la salida.
+
+ls *.json : # Listar los json.
 
 mkdir dir1 : # Crear directorio.
 mkdir -p /var/www/html/nombredirectorio.com : # Crear directorio (-p: crea los directorios padres en caso necesario).
