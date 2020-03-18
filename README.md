@@ -241,6 +241,7 @@ du -h | sort -hr | head
 ```sh
 sudo chown usuario.www-data -R /directorio/ : # Cambiar propietario al directorio.
 sudo chmod -R 755 /directorio : # Cambiar permisos al directorio.
+sudo chmod +x file.php : # Dar permiso de ejecucion al archivo.
 ```
 
 ##### Información del Servidor:
