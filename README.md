@@ -190,6 +190,7 @@ select * from mysql.user; : # Listado de usuarios con sus persmisos.
 show grants for nombre_usuario; : # Listar privilegios de usuario a las base de datos que tiene acceso.
 SHOW GRANTS; : # Listar privilegios para el usuario conectado.
 SHOW GRANTS FOR CURRENT_USER; # Listar privilegios para el usuario conectado.
+select * from mysql.db where user='nombre_usuario'; : # Listado de BD que tiene asigando un usuario.
 select user,host,select_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo solo conuslta. (Y => yes, N => no)
 select user,host,insert_priv,update_priv,delete_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo edición (insertar, modificar y eliminar filas). (Y => yes, N => no)
 
