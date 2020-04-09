@@ -325,9 +325,15 @@ sudo service node_agro stop : # Stop service Node.
 sudo service node_agro restart : # Restart service Node.
 sudo service node_agro status : # Status service Node.
 
+sudo systemctl status node_auditoria.service
+sudo systemctl start node_auditoria.service
+sudo systemctl stop node_auditoria.service
+
 sudo systemctl | grep running : # Listado de servicios y busca los que estan corriendo.
 systemctl daemon-reload : # Actualizar servicios.
 /lib/systemd/system/ : # Ubicacion de los servicios.
+
+journalctl -u node_transporte.service -f -n 50 : # Ver registros del sistema.
 ```
 
 #### GIT:
