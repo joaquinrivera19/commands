@@ -293,6 +293,7 @@ ifconfig : # Muestra/Configura las interfaces de red del sistema
 resolveip : # Resuelve la ip del dominio o host que se indique.
 
 ping 172.30.0.131
+ping -c 4 172.30.0.137
 
 hostnamectl : # Informacion del Hostname
 hostname -I : # Muestra todas las direcciones de red del host
