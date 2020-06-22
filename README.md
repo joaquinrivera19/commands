@@ -203,6 +203,8 @@ GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Perm
 GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'%' WITH GRANT OPTION;
 GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'localhost';
 
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON mydb.* TO 'user'@'localhost';
+
 FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
 ```
 
