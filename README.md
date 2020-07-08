@@ -194,14 +194,10 @@ select * from mysql.db where user='nombre_usuario'; : # Listado de BD que tiene 
 select user,host,select_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo solo conuslta. (Y => yes, N => no)
 select user,host,insert_priv,update_priv,delete_priv from mysql.db where db='nombre_basedatos'; : # Listado de usuarios que tienen acceso a una determinada base de datos de modo edición (insertar, modificar y eliminar filas). (Y => yes, N => no)
 
-create user 'user'@'localhost' identified by 'password'; : # Crear nuevo usuario.
 drop user 'user'@'localhost'; : # Eliminar usuario.
 
-# Se ejecuta a nivel de base de datos.
-GRANT ALL PRIVILEGES on base1.* to 'pepe'@'%' identified by 'pepe1234'; : # Permitir el acceso al usuario "pepe" a la base de datos "base1" desde el host remoto "192.168.1.101" utilizando la contraseña "pepe1234"
-
-GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'%' WITH GRANT OPTION;
-GRANT ALL PRIVILEGES ON mydb.* TO 'user'@'localhost';
+CREATE USER 'root'@'%' IDENTIFIED BY 'password'; : # Crear nuevo usuario.
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; : # Permitir el acceso al usuario "root" a todas las bd desde cualquier host
 
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON mydb.* TO 'user'@'localhost';
 
