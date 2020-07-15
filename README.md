@@ -54,6 +54,8 @@ history : # Historial de comandos ejecutados.
 
 sudo vi index.html : # Crear/Ver Archivo. [insert, esc, :q (Salir si no hubo cambios), :q! (Salir sin guardar cambios), :w (guardar), :wq (guarda y sale de vi)].
 
+head -n 5 archivo.sql : # ver cabecera de un archivo.
+
 touch /home/index.html : # Crear archivo.
 echo "<?php phpinfo();?>" > /home/index.php : # Crear archivo con contenido.
 
