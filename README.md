@@ -283,6 +283,10 @@ sudo netstat -plnut : # Puertos Ubuntu.
 curl -I 'https://www.agd.com.ar' : # Info header.
 curl -i 'https://www.recetasnatura.com.ar/api/recipes/list' : # Muestra todo el contenido.
 
+traceroute 172.30.0.136
+tracert 172.30.0.136
+tracepath 172.30.0.136
+
 dig google.com : # Consultas DNS
 dig @8.8.8.8 google.com : # Consultas DNS
 
