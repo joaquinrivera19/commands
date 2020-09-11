@@ -280,7 +280,8 @@ sudo netstat -plnut : # Puertos Ubuntu.
 -n : # Muestra el numero de puerto.
 -a : # Visualiza todas las conexiones activas del sistema.
 
-curl -I https://www.agd.com.ar : # Info header.
+curl -I 'https://www.agd.com.ar' : # Info header.
+curl -i 'https://www.recetasnatura.com.ar/api/recipes/list' : # Muestra todo el contenido.
 
 dig google.com : # Consultas DNS
 dig @8.8.8.8 google.com : # Consultas DNS
