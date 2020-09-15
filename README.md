@@ -204,6 +204,11 @@ GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION; : # Permitir el acc
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP ON mydb.* TO 'user'@'localhost';
 
 FLUSH PRIVILEGES; : # Refrescar todos los privilegios.
+
+
+ALTER USER 'nombre_usuario'@'%' IDENTIFIED WITH mysql_native_password BY 'el_pass'; : # Se usa para Sequelize, ya que utiliza la vieja forma de autenticacion
+flush privileges;
+
 ```
 
 ##### Command MongoDB:
