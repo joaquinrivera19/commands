@@ -448,3 +448,7 @@ sudo /home/apps/proveedores2015/interfaz/convertir-utf16-utf8.sh /tmp/proveedore
 /home/apps/proveedores/ejecutar-interfaz.sh > /tmp/proveedores/resultado.txt
  ```
  
+ #### Reinicio de nginx en iplan3 - SSL vencido Portal de Compras
+ ```sh
+sudo nginx -s reload
+ ```
