@@ -286,8 +286,11 @@ sudo netstat -plnut : # Puertos Ubuntu.
 -n : # Muestra el numero de puerto.
 -a : # Visualiza todas las conexiones activas del sistema.
 
-curl -I 'https://www.agd.com.ar' : # Info header.
-curl -i 'https://www.recetasnatura.com.ar/api/recipes/list' : # Muestra todo el contenido.
+curl URL : # Obtengo los datos del response.
+curl URL -v : # Obtengo la cabecera expandido y los datos del response.
+curl URL -i : # Obtengo la cabecera resumido y los datos del response.
+curl URL -I : # Obtengo la cabecera.
+curl -o example.txt URL : # Exportar el resultado a un archivo.
 
 traceroute 172.30.0.136
 tracert 172.30.0.136
