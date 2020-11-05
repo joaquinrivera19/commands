@@ -183,10 +183,11 @@ LOAD DATA INFILE '/tmp/name_file' INTO TABLE name_table FIELDS TERMINATED BY ';'
 
 mysqladmin -u root -p processlist : # Ver todos los procesos que están corriendo del servidor MySQL.
 mysqladmin -u root -p kill 5 : # Eliminar un proceso del cliente MySQL.
-
+```
 
 ##### Exportar consulta MySQL
 
+```sh
 select * from nombre_tabla INTO OUTFILE '/tmp/nombre_tabla.csv ' FIELDS TERMINATED BY ';' ENCLOSED BY '\"' LINES TERMINATED BY '\r\n';
 
 mysql -u nombre_user -p nombre_bd -e "select * from nombre_tabla" > /tmp/nombre_tabla.txt
