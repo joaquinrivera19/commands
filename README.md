@@ -283,6 +283,11 @@ lastlog : # Listados de todos los usuarios con la fecha de ultimo ingreso.
 
 whoami : # Muestra el usuario actual.
 
+history : # Muestra los comandos que hemos utilizado.
+history | grep "comando que buscamos" : # filtrando por un comando.
+
+id : # Muestra información relativa a nuestro usuario.
+
 lsb_release -a : # Version del Servidor.
 
 sudo netstat -plnut : # Puertos Ubuntu.
@@ -356,6 +361,15 @@ systemctl daemon-reload : # Actualizar servicios.
 /lib/systemd/system/ : # Ubicacion de los servicios.
 
 journalctl -u node_transporte.service -f -n 50 : # Ver registros del sistema.
+
+journalctl -u node_transporte.service --since yesterday | grep 63804
+journalctl -u node_transporte.service --since "2020-10-28 08:50:00" --until "2020-10-28 08:55:00"
+
+journalctl -u node_transporte.service _PID=21572
+journalctl -u node_transporte.service _PID=21572 --since "2020-10-28" -full > /home/jrivera/log_transporte.txt
+
+journalctl -u node_transporte.servic -n 100 -o json-pretty
+
 ```
 
 #### GIT:
