@@ -1,4 +1,4 @@
-##### Permisos en ficheros:
+##### Comando básico Heroku:
 
 ```sh
 
