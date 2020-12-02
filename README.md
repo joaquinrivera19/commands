@@ -90,8 +90,6 @@ find /root/ -type f -printf "%T@ %p\n" | sort -nr | head -15 : # Buscar los 15 a
 
 grep -lir "linux" "/media/cosas" : # Buscar archivos que contengan la frase “linux” dentro la carpeta /media/cosas. El parámetro -l le indica que imprima los nombres de archivos en los que se encuentre el texto solicitado. El parámetro -i, que ignore las mayúsculas y minúsculas. El parámetro -r, que busque en forma recursiva dentro de la ruta indicada.
 grep linux /cosas/*.pdf : # Buscar en un determinado archivo la frase linux.
-grep Aug /var/log/messages : # Buscar palabras “Aug” en el fichero /var/log/messages.
-grep Aug *. * : # Busar palabras "Aug" en todos los ficheros.
 
 grep -c ruby README.md : # Recuento de ocurrencias (-c).
 grep -n Ruby README.md : # Visualización de números de línea (-n).
