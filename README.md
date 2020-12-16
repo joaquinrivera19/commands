@@ -188,6 +188,10 @@ mysqladmin -u root -p kill 5 : # Eliminar un proceso del cliente MySQL.
 ```sh
 select * from nombre_tabla INTO OUTFILE '/tmp/nombre_tabla.csv ' FIELDS TERMINATED BY ';' ENCLOSED BY '\"' LINES TERMINATED BY '\r\n';
 
+#En caso que responda el error
+#The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+#Correr SHOW VARIABLES LIKE "secure_file_priv"; para saber la ubicacion y usar esa ubicacion en la variable OUTFILE.
+
 mysql -u nombre_user -p nombre_bd -e "select * from nombre_tabla" > /tmp/nombre_tabla.txt
 ```
 
