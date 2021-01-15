@@ -484,4 +484,5 @@ sudo nginx -s reload
   #### Share Folders on Local Network Between Ubuntu and Window
  ```sh
 sudo mount.cifs //IP/compartido$ /directorio -o user=nombre_usuario, pass="pass_usuario" 
+sudo mount : # Ver unidades de red montada.
  ```
