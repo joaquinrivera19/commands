@@ -480,3 +480,8 @@ sudo /home/apps/proveedores2015/interfaz/convertir-utf16-utf8.sh /tmp/proveedore
  ```sh
 sudo nginx -s reload
  ```
+ 
+  #### Share Folders on Local Network Between Ubuntu and Window
+ ```sh
+sudo mount.cifs //IP/compartido$ /directorio -o user=nombre_usuario, pass="pass_usuario" 
+ ```
