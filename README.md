@@ -62,6 +62,8 @@ echo "<?php phpinfo();?>" > /home/index.php : # Crear archivo con contenido.
 # Encadenar número de comandos ( | ). Ej: ls -a | grep _
 # Escribir en un archivo ( > ). Ej: ls -a | grep _ > underscores.txt
 
+which [name-of-the-program] : # Locate the binary for a program.
+
 ```
 
 ##### Encontrar archivos:
