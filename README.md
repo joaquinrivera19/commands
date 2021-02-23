@@ -145,6 +145,8 @@ mysql -u name_user -p; : # Abrir MySQL.
 mysql -u name_user -p name_bd; : # Abrir MySQL.
 mysql -u name_user -p password name_bd -h host -P port : # Abrir MySQL.
 
+EXPLAIN EXTENDED SELECT * FROM mi_tabla; : # Obtener información sobre el plan de ejecución.
+
 use nombre_bd;  : # Abrir bd.
 describe nombre_tabla; : # Estructura tabla.
 create database nombre_bd; : # Crear bd.
