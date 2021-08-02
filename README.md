@@ -253,8 +253,12 @@ du -h --max-depth=1 -x : # Muestra el uso de espacio de archivos y directorios.
 du -csh / : # mismo de arriba.
 du -d1 -h /home | sort -h : # mismo de arriba.
 
-du -hs * | sort -nr | head -5
+du -sh * : # Muestra peso de los directorios
+du -sh * | sort -nr | head -5
+
 du -h | sort -hr | head
+du -h -d 1 /home --threshold=10M | sort -h
+
 ```
 
 ##### Permisos en ficheros:
