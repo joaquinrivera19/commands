@@ -364,6 +364,9 @@ sudo systemctl stop node_auditoria.service
 
 sudo systemctl | grep running : # Listado de servicios y busca los que estan corriendo.
 systemctl daemon-reload : # Actualizar servicios.
+
+systemctl -l --type service --all : # Lista todos los servicio.
+
 /lib/systemd/system/ : # Ubicacion de los servicios.
 
 journalctl -u node_transporte.service -f -n 50 : # Ver registros del sistema.
@@ -373,7 +376,7 @@ journalctl -u node_transporte.service --since "2020-10-28 08:50:00" --until "202
 
 journalctl -u node_transporte.service _PID=21572
 journalctl -u node_transporte.service _PID=21572 --since "2020-10-28" -full > /home/jrivera/log_transporte.txt
-
+sudo journalctl -u agripagoapp.service --since "2021-07-27 00:00:00" | grep 30708841907 > /home/jrivera/log_agri_ayer_2.txt
 journalctl -u node_transporte.servic -n 100 -o json-pretty
 
 ```
