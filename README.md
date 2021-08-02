@@ -32,6 +32,7 @@ ls : # Listar contenido.
 ls *.json : # Listar los json.
 
 ls -d *transporte* : # Lista los que tengan ese nombre.
+ls -la | grep node : # Lista los que tengan ese nombre.
 
 mkdir dir1 : # Crear directorio.
 mkdir -p /var/www/html/nombredirectorio.com : # Crear directorio (-p: crea los directorios padres en caso necesario).
