@@ -324,6 +324,8 @@ tracepath 172.30.0.136
 dig google.com : # Consultas DNS
 dig @8.8.8.8 google.com : # Consultas DNS
 
+nmap 172.30.0.137 : # Ver los puertos abiertos.
+
 wget  url_descargar : # Descargar archivo de internet
 
 ifconfig : # Muestra/Configura las interfaces de red del sistema
