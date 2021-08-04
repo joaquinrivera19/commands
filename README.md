@@ -286,6 +286,9 @@ ps aux | grep bash : # filtrar resultados de procesos bash.
 free : # Memoria utilizada / libre.
 free -h : # Memoria utilizada / libre.
 
+which node
+whereis node
+
 kill id_proceso : # Termina procesos.
 
 w : # Usuarios conectados.
