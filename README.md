@@ -385,8 +385,11 @@ journalctl -u node_transporte.service --since "2020-10-28 08:50:00" --until "202
 
 journalctl -u node_transporte.service _PID=21572
 journalctl -u node_transporte.service _PID=21572 --since "2020-10-28" -full > /home/jrivera/log_transporte.txt
-sudo journalctl -u agripagoapp.service --since "2021-07-27 00:00:00" | grep 30708841907 > /home/jrivera/log_agri_ayer_2.txt
+journalctl -u agripagoapp.service --since "2021-07-27 00:00:00" | grep 30708841907 > /home/jrivera/log_agri_ayer_2.txt
 journalctl -u node_transporte.servic -n 100 -o json-pretty
+
+sudo journalctl -u nombre_servicio.service --since "5 days ago" > logs_since_5_days.txt : # Exportar log de 5 dias atraz.
+sudo journalctl -u nombre_servicio.service --since "today" > logs_since_today.txt : # Exportar log de hoy.
 
 ```
 
