@@ -448,6 +448,10 @@ git stash clear : # Remove all stashed entries.
 # Para fusionar una rama nuevafuncionalidad dentro de master vamos a situarnos en la rama mater y a mezclar ambas:
 git checkout master : # Cambiar a branch master.
 git merge nuevafuncionalidad : # Fusionar nuevafuncionalidad a tu rama activa(master).
+
+git fetch origin : # Descarga todo como esta en el repo de github.
+git reset --hard origin/master : # Resetea los cambios a como esta en el repo de github.
+
  ```
  
 ##### Sharing & Updating Projects
