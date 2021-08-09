@@ -2,7 +2,7 @@
 
 ```sh
 
-npm install -g ionic
+npm install -g @ionic/cli
 
 # Crear una nueva aplicación de Ionic
 
