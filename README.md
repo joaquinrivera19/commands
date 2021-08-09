@@ -283,11 +283,19 @@ ps -u nombre_usuario : # Procesos activos del usuario.
 ps aux : # muestra todos los procesos del sistema.
 ps aux | grep bash : # filtrar resultados de procesos bash.
 
+sudo lsof -i -P -n | grep puerto
+sudo lsof -i:3339 
+
+ps puerto : # Te indica el pach
+ps -ef | grep 18069 : # Te indica el pach
+
 free : # Memoria utilizada / libre.
 free -h : # Memoria utilizada / libre.
 
 which node
 whereis node
+
+history | grep algo : # Muestra los comandos ejecutados
 
 kill id_proceso : # Termina procesos.
 
