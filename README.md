@@ -53,7 +53,6 @@ mv directorio directorio_renombrado : # Renombrar directorio.
 
 ctrl + c  : # Frenar ejecución.
 clear : # Limpiar pantalla.
-history : # Historial de comandos ejecutados.
 
 sudo vi index.html : # Crear/Ver Archivo. [insert, esc, :q (Salir si no hubo cambios), :q! (Salir sin guardar cambios), :w (guardar), :wq (guarda y sale de vi)].
 
@@ -295,7 +294,8 @@ free -h : # Memoria utilizada / libre.
 which node
 whereis node
 
-history | grep algo : # Muestra los comandos ejecutados
+history : # Muestra los comandos que hemos utilizado.
+history | grep "comando que buscamos" : # Muestra los comandos ejecutados con filtro
 
 kill id_proceso : # Termina procesos.
 
@@ -306,9 +306,6 @@ last : # Ultimos usuarios conectados.
 lastlog : # Listados de todos los usuarios con la fecha de ultimo ingreso.
 
 whoami : # Muestra el usuario actual.
-
-history : # Muestra los comandos que hemos utilizado.
-history | grep "comando que buscamos" : # filtrando por un comando.
 
 id : # Muestra información relativa a nuestro usuario.
 
