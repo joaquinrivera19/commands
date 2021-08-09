@@ -276,6 +276,8 @@ sudo chmod +x file.php : # Dar permiso de ejecucion al archivo.
 ```sh
 top : # Procesos de la CPU en tiempo real.
 top -u jrivera : # Mostrar unicamente de un usuario.
+top -c : # Procesos de la CPU con su ubicacion.
+
 htop : # Procesos de la CPU en tiempo real.
 ps : # Procesos activo.
 ps -u nombre_usuario : # Procesos activos del usuario.
