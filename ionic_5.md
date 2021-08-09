@@ -14,6 +14,10 @@ ionic start myApp blank
 
 ionic serve
 
+# Iniciar el servicio de Ionic para verlo en ambas plataformas iOS y Android al mismo tiempo.
+
+ionic serve --lab
+
 ionic cordova platform add android
 ionic cordova platform add ios
 
