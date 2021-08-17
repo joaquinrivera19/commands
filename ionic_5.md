@@ -43,7 +43,7 @@ ionic g component NombreComponente
 
 # Crear un pipe en ionic
 
-ionic g pipi NombrePipe 
+ionic g pipe NombrePipe 
 
 # Crear componentes via ng Angular(c componente, m modulo, g generar, services)
 
