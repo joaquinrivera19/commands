@@ -33,6 +33,7 @@ const summary = fruits.map((fruit, index) => {
 
 // Array of Strings
 console.log(summary);
+<!---
 /*
 [
     '3 units of Apple costs $0.75',
@@ -40,6 +41,7 @@ console.log(summary);
     '4 units of Banana costs $0.60'
 ]
 */
+-->
 ```
 
 Filter function --> Cree un nuevo array a partir de la original cuando se cumpla una condición.
