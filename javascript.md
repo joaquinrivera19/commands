@@ -264,5 +264,16 @@ Array.of(7);       // [7]
 Array.of(1, 2, 3); // [1, 2, 3]
 ```
 
+31. El método **toFixed()** permite especificar cuántas fracciones decimales con los que desea que se represente el valor:
+
+```sh
+let a = 42.59;
+a.toFixed(0); // "43"
+a.toFixed(1); // "42.6"
+a.toFixed(2); // "42.59"
+a.toFixed(3); // "42.590"
+a.toFixed(4); // "42.5900"
+```
+
 
 ---
