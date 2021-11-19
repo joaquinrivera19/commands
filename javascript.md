@@ -275,5 +275,72 @@ a.toFixed(3); // "42.590"
 a.toFixed(4); // "42.5900"
 ```
 
+32. El método **Object.assign()** copia todas las propiedades enumerables de uno o más objetos de origen (source) a un objeto destino (target). Devuelve el objeto destino. 
+
+```sh
+const target = { a: 1, b: 2 };
+const source = { b: 4, c: 5 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target) // { a: 1, b: 4, c: 5 }
+
+console.log(returnedTarget) // { a: 1, b: 4, c: 5 }
+```
+
+33. El método **JSON.stringify()** convierte un objeto o valor de JavaScript en una cadena de texto JSON:
+
+```sh
+obj -> json
+
+const obj = {name: "John", age: 30, city: "New York"};
+console.log(JSON.stringify(obj)) // {"name":"John","age":30,"city":"New York"}
+```
+
+34. El método **JSON.parse()** analiza una cadena de texto como JSON, transformando opcionalmente  el valor producido por el análisis.
+
+```sh
+json -> obj
+
+const txt = '{"name":"John", "age":30, "city":"New York"}'
+console.log(JSON.parse(txt)) // {name: "John", age: 30, city: "New York"}
+```
+
+El método **split()** divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas. Devuelve el nuevo array.
+
+
+```sh
+let text = "How are you doing today?";
+const myArray = text.split();
+console.log(myArray) // ["How are you doing today?"]
+
+let text = "How are you doing today?";
+const myArray = text.split(" ");
+console.log(myArray) // ["How", "are", "you", "doing", "today?"]
+
+let text = "How are you doing today?";
+const myArray = text.split("");
+console.log(myArray) // ["H", "o", "w", " ", "a", "r", "e", " ", "y", "o", "u", " ", "d", "o", "i", "n", "g", " ", "t", "o", "d", "a", "y", "?"]
+
+let text = "How,are,you,doing,today?";;
+const myArray = text.split(',')
+console.log(myArray) // ["How", "are", "you", "doing", "today?"]
+
+let text = "How,are,you,doing,today?";
+const myArray = text.split(',', 2)
+console.log(myArray) // ["How", "are"]
+
+let text = "How are you doing today?";
+const myArray = text.split(" ", 3);
+console.log(myArray) // ["How", "are", "you"]
+
+let text = "How are you doing today?";
+const myArray = text.split("o");
+console.log(myArray) // ["H", "w are y", "u d", "ing t", "day?"]
+
+let text = "javascript";
+const myArray = text.split('').reverse().join('')
+console.log(myArray) // tpircsavaj
+```
 
 ---
