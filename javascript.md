@@ -40,6 +40,21 @@ const resultArray = array.forEach((element, i) => {
 const array = [1,2,3,4,5,6,7]
 const resultArray = array.find( element => element > 3 )
 console.log(resultArray) // [4]
+
+
+const people = ['chris', 'nick', 'holly'];
+const singlePerson = people.find(name => name === 'chris');
+console.log(singlePerson); // chris
+
+
+const people = [
+  { name: 'chris', username: 'chrisoncode' },
+  { name: 'nick', username: 'whatnicktweets' },
+  { name: 'holly', username: 'hollylawly' },
+];
+
+const singlePerson = people.find(person => person.name === 'holly');
+console.log(singlePerson); // { name: 'holly', username: 'hollylawly' }
 ```
 
 5. **sort()** : Ordena los elementos del array y retorna el arreglo ordenado. Los elementos se ordenarán en orden ascendente (de la A a la Z) por defecto.
@@ -306,8 +321,7 @@ const txt = '{"name":"John", "age":30, "city":"New York"}'
 console.log(JSON.parse(txt)) // {name: "John", age: 30, city: "New York"}
 ```
 
-El método **split()** divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas. Devuelve el nuevo array.
-
+35. El método **split()** divide un objeto de tipo String en un array (vector) de cadenas mediante la separación de la cadena en subcadenas. Devuelve el nuevo array.
 
 ```sh
 let text = "How are you doing today?";
@@ -341,6 +355,20 @@ console.log(myArray) // ["H", "w are y", "u d", "ing t", "day?"]
 let text = "javascript";
 const myArray = text.split('').reverse().join('')
 console.log(myArray) // tpircsavaj
+```
+
+36. Calcular el valor **Max/Min** de un array.
+
+```sh
+var numbers = [1, 2, 3, 4];
+Math.max.apply(null, numbers) // 4
+Math.min.apply(null, numbers) // 1
+
+Otra forma
+
+var numbers = [1, 2, 3, 4];
+Math.max(...numbers) // 4
+Math.min(...numbers) // 1
 ```
 
 ---
