@@ -111,11 +111,15 @@ const someOtherArray = [ ...arr1, ...arr2 ];
 console.log(someOtherArray) // ["a", "b", "c", "d", "e", "f"]
 ```
 
-9.  **includes()** : Determina si un array incluye un determinado elemento y retorna un booleano según corresponda.
+9.  **includes()** : Determina si un array o cadenas de texto incluye un determinado elemento y retorna un booleano según corresponda (true/false).
 ```sh
 const array = [1,2,3,4,5,6,7]
 console.log(array.includes(2)) // true
 console.log(array.includes(8)) // false
+
+const cadena = 'En Tutz aprendes JavaScript';
+cadena.includes('Tutz'); // true
+cadena.includes('tutz'); // false
 ```
 
 10.  **join()** : Une todos los elementos de un array en una cadena. Podemos pasarle como parámetro el carácter de separación que debe agregar entre los elementos.
